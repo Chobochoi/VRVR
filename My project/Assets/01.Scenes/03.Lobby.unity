@@ -3171,6 +3171,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -804731622281664130, guid: 88a31afb704fc19499dc4fc119bbef54, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 80c5901e9f2eb3a4780b29cabaf48f3c, type: 2}
     - target: {fileID: 919132149155446097, guid: 88a31afb704fc19499dc4fc119bbef54, type: 3}
       propertyPath: m_Name
       value: ChairRoom
