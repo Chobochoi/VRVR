@@ -3801,7 +3801,7 @@ MonoBehaviour:
   projectedPassthroughRoot: {fileID: 0}
   projectedPassthroughMesh: {fileID: 0}
   ProjectedPassthroughKeyLabel: {fileID: 0}
-  ActiveKeyboardTransform: {fileID: 0}
+  ActiveKeyboardTransform: {fileID: 5671431997716857503, guid: e9c36ab6506ab5b4bb79e26e150c8b4c, type: 3}
   HandsOverKeyboard: 0
   UseHeuristicRollback: 0
 --- !u!1 &1528764048

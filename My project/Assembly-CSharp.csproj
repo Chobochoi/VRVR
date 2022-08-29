@@ -144,6 +144,7 @@
      <Compile Include="Assets\02.Script\IntroManager.cs" />
      <Compile Include="Assets\02.Script\IAPManager.cs" />
      <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\SPPquad.cs" />
+     <Compile Include="Assets\02.Script\SceneBack.cs" />
      <Compile Include="Assets\Oculus\SampleFramework\Core\DebugUI\Scripts\LaserPointer.cs" />
      <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportTransition.cs" />
      <Compile Include="Assets\Photon\PhotonVoice\Demos\DemoProximityVoiceChat\Scripts\ProximityVoiceTrigger.cs" />
@@ -225,7 +226,16 @@
      <Compile Include="Assets\Oculus\SampleFramework\Usage\SpatialAnchor\Scripts\AnchorUIManager.cs" />
      <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\SelectivePassthroughExperience.cs" />
      <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\TrackSegment.cs" />
-     <Compile Include="Assets\02.Script\SceneBack.cs" />
+     <Compile Include="Assets\uWindowCapture\Samples\New Window\UwcNewWindowExample.cs" />
+     <Compile Include="Assets\uWindowCapture\Samples\Desktop Layout\UwcDesktopLayouter.cs" />
+     <Compile Include="Assets\uWindowCapture\Samples\Window List\UwcWindowList.cs" />
+     <Compile Include="Assets\uWindowCapture\Samples\Texture Buffer\UwcGetBufferExample.cs" />
+     <Compile Include="Assets\uWindowCapture\Samples\Horizontal Layout\UwcHorizontalLayouter.cs" />
+     <Compile Include="Assets\uWindowCapture\Samples\RayCast\UwcRayCastExample.cs" />
+     <Compile Include="Assets\uWindowCapture\Samples\GetPixels\UwcGetPixelExample.cs" />
+     <Compile Include="Assets\uWindowCapture\Samples\GetPixels\UwcGetPixelsExample.cs" />
+     <Compile Include="Assets\uWindowCapture\Samples\Only Child Window\UwcChildWindowExample.cs" />
+     <Compile Include="Assets\uWindowCapture\Samples\Window List\UwcWindowListItem.cs" />
      <None Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Shaders\XingLightShader.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\Oculus\SampleFramework\Usage\SceneManager\Shaders\Hidden.shader" />
@@ -255,6 +265,7 @@
      <None Include="Assets\Photon\PhotonVoice\Demos\DemoVoicePun\Fonts\Orbitron Black.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\JsonDotNet\link.xml" />
+     <None Include="Assets\uWindowCapture\Assets\Shaders\UwcUnlit.shader" />
      <None Include="Assets\Samples\XR Interaction Toolkit\2.1.1\Tunneling Vignette\TunnelingVignette.shader" />
      <None Include="Assets\Oculus\SampleFramework\Core\Video\Shaders\Multiview Stereo.shader" />
      <None Include="Assets\Oculus\SampleFramework\Core\DebugUI\Fonts\Montserrat\OFL.txt" />
@@ -270,12 +281,14 @@
      <None Include="Assets\Photon\PhotonVoice\Demos\DemoVoiceUI\RobotoFont\Apache License.txt" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+     <None Include="Assets\uWindowCapture\Assets\Shaders\UwcTransparent.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
      <None Include="Assets\Photon\PhotonUnityNetworking\readme.txt" />
      <None Include="Assets\Photon\PhotonChat\Demos\DemoChat\Files\eurof_tt.txt" />
      <None Include="Assets\Photon\PhotonVoice\Demos\DemoVoicePun\Audio\Reminder-public_d-291_hifi.mp3.txt" />
      <None Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Shaders\OculusSampleAlphaHandOutline.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+     <None Include="Assets\uWindowCapture\Assets\Shaders\UwcCommon.cginc" />
      <None Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Materials\GlowEffect.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
      <None Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Shaders\OculusSampleTrainSmokeShader.shader" />
@@ -1190,6 +1203,10 @@
     <ProjectReference Include="VoiceSDK.Runtime.csproj">
       <Project>{711acbbf-b1a1-55f6-2e3a-49328af55f29}</Project>
       <Name>VoiceSDK.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="uWindowCapture.Runtime.csproj">
+      <Project>{add8478f-5f0b-efa9-f582-5d8266d32b9d}</Project>
+      <Name>uWindowCapture.Runtime</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
