@@ -13,43 +13,43 @@ public class IntroManager : MonoBehaviour
     public TMP_InputField email;
     public TMP_InputField password;
     public TMP_InputField username;
-    public TMP_InputField region;
+    //public TMP_InputField region;
 
     public void LoginSuccess(LoginResult result)
     {
         PhotonNetwork.AutomaticallySyncScene = false;
 
-        // °°Àº ¹öÀü¸¸ Á¢¼ÓÇÒ ¼ö ÀÖ°Ô 1.0v
+        // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ö°ï¿½ 1.0v
         PhotonNetwork.GameVersion = "1.0";
 
-        // ´Ð³×ÀÓ ¼³Á¤
+        // ï¿½Ð³ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         PhotonNetwork.NickName = username.text;
 
-        // Áö¿ª ¼³Á¤
-        PhotonNetwork.PhotonServerSettings.AppSettings.FixedRegion = region.text;
+        // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+        //PhotonNetwork.PhotonServerSettings.AppSettings.FixedRegion = region.text;
 
-        // ¼­¹ö Á¢¼Ó
+        // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         PhotonNetwork.LoadLevel("01.Scenes/02.Server");
     }
 
     public void LoginFailure(PlayFabError error)
     {
-        Debug.Log("·Î±×ÀÎ ½ÇÆÐ");
+        Debug.Log("ï¿½Î±ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
     }
 
     public void SignUpSuccess(RegisterPlayFabUserResult result)
     {
-        Debug.Log("È¸¿ø°¡ÀÔ ¼º°ø");
+        Debug.Log("È¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
     }
 
     public void SignUpFailure(PlayFabError error)
     {
-        Debug.Log("È¸¿ø°¡ÀÔ ½ÇÆÐ");
+        Debug.Log("È¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
     }
 
     public void SignUp()
     {
-        // ¼­¹ö¿¡ À¯Àú µî·Ï ½ÃÅ°±â À§ÇÔ
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½Å°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         var request = new RegisterPlayFabUserRequest()
         {
             Email = email.text,
@@ -57,14 +57,14 @@ public class IntroManager : MonoBehaviour
             Username = username.text
         };
 
-        // request : È¸¿ø°¡ÀÔ Á¤º¸
+        // request : È¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         PlayFabClientAPI.RegisterPlayFabUser
         (request, SignUpSuccess, SignUpFailure);
     }
 
     public void Login()
     {
-        // ·Î±×ÀÎ ¿©ºÎ ¼³Á¤
+        // ï¿½Î±ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         var request = new LoginWithEmailAddressRequest()
         {
             Email = email.text,

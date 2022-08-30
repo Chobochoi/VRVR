@@ -45,17 +45,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oculus.LipSync", "Oculus.Li
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotonChat", "PhotonChat.csproj", "{d383c7d7-1d6b-ec12-0bb6-f34981a7a963}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uWindowCapture.Runtime", "uWindowCapture.Runtime.csproj", "{add8478f-5f0b-efa9-f582-5d8266d32b9d}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotonVoice.PUN", "PhotonVoice.PUN.csproj", "{d2b30c84-36b6-f5db-f432-73b0244f429b}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Febucci.HierarchyIcons.Examples", "Febucci.HierarchyIcons.Examples.csproj", "{f55ea8ba-459b-d3a5-ffbf-bf0faf6ce329}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facebook.Wit.TTS.Samples", "Facebook.Wit.TTS.Samples.csproj", "{14bb6d60-59d9-5e9a-1938-fd826d6e410a}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uWindowCapture.Runtime", "uWindowCapture.Runtime.csproj", "{add8478f-5f0b-efa9-f582-5d8266d32b9d}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotonUnityNetworking.Editor", "PhotonUnityNetworking.Editor.csproj", "{349ad989-77c9-4491-c554-6d6aab09f39d}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oculus.Interaction.Editor", "Oculus.Interaction.Editor.csproj", "{dce4b565-f5b3-33fa-f51a-ef234f3864d1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uWindowCapture.Editor", "uWindowCapture.Editor.csproj", "{238ca219-22dd-ee33-ff7a-06fc81b5390d}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facebook.Wit.Editor", "Facebook.Wit.Editor.csproj", "{a22ac19a-eb21-df6d-e673-2cab3ad0c568}"
 EndProject
@@ -109,8 +111,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oculus.AudioManager.Utils.E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotonVoice.PUN.Editor", "PhotonVoice.PUN.Editor.csproj", "{3798a323-77fe-24f2-b570-6bfaed79cb94}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uWindowCapture.Editor", "uWindowCapture.Editor.csproj", "{238ca219-22dd-ee33-ff7a-06fc81b5390d}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -160,18 +160,20 @@ Global
 		{db8f7a47-5dd2-4b30-d2d7-4aaf48b42f5e}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{d383c7d7-1d6b-ec12-0bb6-f34981a7a963}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{d383c7d7-1d6b-ec12-0bb6-f34981a7a963}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{add8478f-5f0b-efa9-f582-5d8266d32b9d}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{add8478f-5f0b-efa9-f582-5d8266d32b9d}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{d2b30c84-36b6-f5db-f432-73b0244f429b}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{d2b30c84-36b6-f5db-f432-73b0244f429b}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{f55ea8ba-459b-d3a5-ffbf-bf0faf6ce329}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{f55ea8ba-459b-d3a5-ffbf-bf0faf6ce329}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14bb6d60-59d9-5e9a-1938-fd826d6e410a}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{14bb6d60-59d9-5e9a-1938-fd826d6e410a}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{add8478f-5f0b-efa9-f582-5d8266d32b9d}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{add8478f-5f0b-efa9-f582-5d8266d32b9d}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{349ad989-77c9-4491-c554-6d6aab09f39d}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{349ad989-77c9-4491-c554-6d6aab09f39d}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{dce4b565-f5b3-33fa-f51a-ef234f3864d1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{dce4b565-f5b3-33fa-f51a-ef234f3864d1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{238ca219-22dd-ee33-ff7a-06fc81b5390d}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{238ca219-22dd-ee33-ff7a-06fc81b5390d}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{a22ac19a-eb21-df6d-e673-2cab3ad0c568}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{a22ac19a-eb21-df6d-e673-2cab3ad0c568}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65cc96ef-0904-61b9-d051-cc1a30637743}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -224,8 +226,6 @@ Global
 		{faa301f3-c4e1-37ef-8fb8-a2f20e02c2b6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3798a323-77fe-24f2-b570-6bfaed79cb94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3798a323-77fe-24f2-b570-6bfaed79cb94}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{238ca219-22dd-ee33-ff7a-06fc81b5390d}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{238ca219-22dd-ee33-ff7a-06fc81b5390d}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
