@@ -11,12 +11,11 @@ public class KeyboardButtonController : MonoBehaviour
     [SerializeField] Image containerIcon;
     [SerializeField] TextMeshProUGUI containerText;
     [SerializeField] TextMeshProUGUI containerActionText;
-    //[SerializeField] TextMeshProUGUI emailText;
-    //[SerializeField] TextMeshProUGUI passwordText;
-    //[SerializeField] TextMeshProUGUI nicknameText;
-
-    private void Start() 
+    InputManager inputManager;
+    private void Start()
     {
+        inputManager = GameObject.FindGameObjectWithTag("InputField").GetComponent<InputManager>();
+
         SetContainerBorderColor(ColorDataStore.GetKeyboardBorderColor());
         SetContainerFillColor(ColorDataStore.GetKeyboardFillColor());
         SetContainerTextColor(ColorDataStore.GetKeyboardTextColor());
@@ -26,32 +25,47 @@ public class KeyboardButtonController : MonoBehaviour
     public void SetContainerBorderColor(Color color) => containerBorderImage.color = color;
     public void SetContainerFillColor(Color color) => containerFillImage.color = color;
     public void SetContainerTextColor(Color color) => containerText.color = color;
-    public void SetContainerActionTextColor(Color color) { 
+    public void SetContainerActionTextColor(Color color)
+    {
         containerActionText.color = color;
         containerIcon.color = color;
     }
 
-    public void AddLetter() {
-        if(GameManager.Instance != null) 
+    public void AddLetter()
+    {
+        if (GameManager.Instance != null)
         {
             GameManager.Instance.AddLetter(containerText.text);
-        } 
-        else 
+        }
+        else
         {
-            Debug.Log(containerText.text + " is pressed");
+            inputManager.currentInputField.text += containerText.text;
         }
     }
-    public void DeleteLetter() { 
-        if(GameManager.Instance != null) {
+    public void DeleteLetter()
+    {
+        if (GameManager.Instance != null)
+        {
             GameManager.Instance.DeleteLetter();
-        } else {
+        }
+
+        else
+        {
+            if (inputManager.currentInputField.text.Length != 0)
+            {
+                inputManager.currentInputField.text = inputManager.currentInputField.text.Remove(inputManager.currentInputField.text.Length - 1, 1);
+            }
             Debug.Log("Last char deleted");
         }
     }
-    public void SubmitWord() {
-        if(GameManager.Instance != null) {
+    public void SubmitWord()
+    {
+        if (GameManager.Instance != null)
+        {
             GameManager.Instance.SubmitWord();
-        } else {
+        }
+        else
+        {
             Debug.Log("Submitted successfully!");
         }
     }

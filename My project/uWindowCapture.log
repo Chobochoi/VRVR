@@ -1,27 +1,18 @@
-[uWC::Log][2022-09-02 17:53:25] Start
-[uWC::Err][2022-09-02 17:53:25] WindowsGraphicsCapture::CreateItem() threw an WinRT exception: 0x80070057 매개 변수가 틀립니다.
-[uWC::Err][2022-09-02 17:53:25] WindowsGraphicsCapture::CreateItem() threw an WinRT exception: 0x80070057 매개 변수가 틀립니다.
-[uWC::Err][2022-09-02 17:53:25] WindowsGraphicsCapture::CreateItem() threw an WinRT exception: 0x80070057 매개 변수가 틀립니다.
-[uWC::Err][2022-09-02 17:53:25] WindowsGraphicsCapture::CreateItem() threw an WinRT exception: 0x80070057 매개 변수가 틀립니다.
-[uWC::Err][2022-09-02 17:53:25] WindowsGraphicsCapture::CreateItem() threw an WinRT exception: 0x80070057 매개 변수가 틀립니다.
-[uWC::Err][2022-09-02 17:53:25] WindowsGraphicsCapture::CreateItem() threw an WinRT exception: 0x80070057 매개 변수가 틀립니다.
-[uWC::Err][2022-09-02 17:53:25] WindowsGraphicsCapture::CreateItem() threw an WinRT exception: 0x80070057 매개 변수가 틀립니다.
-[uWC::Err][2022-09-02 17:53:25] WindowsGraphicsCapture::CreateItem() threw an WinRT exception: 0x80070057 매개 변수가 틀립니다.
-[uWC::Err][2022-09-02 17:53:25] WindowsGraphicsCapture::CreateItem() threw an WinRT exception: 0x80070057 매개 변수가 틀립니다.
-[uWC::Err][2022-09-02 17:53:25] WindowsGraphicsCapture::CreateItem() threw an WinRT exception: 0x80070057 매개 변수가 틀립니다.
-[uWC::Err][2022-09-02 17:53:25] WindowsGraphicsCapture::CreateItem() threw an WinRT exception: 0x80070057 매개 변수가 틀립니다.
-[uWC::Err][2022-09-02 17:53:25] WindowsGraphicsCapture::CreateItem() threw an WinRT exception: 0x80070057 매개 변수가 틀립니다.
-[uWC::Err][2022-09-02 17:54:38] WindowsGraphicsCapture::CreateItem() threw an WinRT exception: 0x80070057 매개 변수가 틀립니다.
-[uWC::Err][2022-09-02 17:54:39] WindowsGraphicsCapture::CreateItem() threw an WinRT exception: 0x80070057 매개 변수가 틀립니다.
-[uWC::Err][2022-09-02 17:54:39] WindowsGraphicsCapture::CreateItem() threw an WinRT exception: 0x80070057 매개 변수가 틀립니다.
-[uWC::Err][2022-09-02 17:54:39] WindowsGraphicsCapture::CreateItem() threw an WinRT exception: 0x80070057 매개 변수가 틀립니다.
-[uWC::Err][2022-09-02 17:54:55] WindowsGraphicsCapture::CreateItem() threw an WinRT exception: 0x80070057 매개 변수가 틀립니다.
-[uWC::Err][2022-09-02 17:54:55] WindowsGraphicsCapture::CreateItem() threw an WinRT exception: 0x80070057 매개 변수가 틀립니다.
-[uWC::Err][2022-09-02 17:54:55] WindowsGraphicsCapture::CreateItem() threw an WinRT exception: 0x80070057 매개 변수가 틀립니다.
-[uWC::Err][2022-09-02 17:54:57] WindowsGraphicsCapture::CreateItem() threw an WinRT exception: 0x80070057 매개 변수가 틀립니다.
-[uWC::Err][2022-09-02 17:55:08] WindowsGraphicsCapture::CreateItem() threw an WinRT exception: 0x80070057 매개 변수가 틀립니다.
-[uWC::Err][2022-09-02 17:55:08] WindowsGraphicsCapture::CreateItem() threw an WinRT exception: 0x80070057 매개 변수가 틀립니다.
-[uWC::Err][2022-09-02 17:55:13] WindowsGraphicsCapture::CreateItem() threw an WinRT exception: 0x80070057 매개 변수가 틀립니다.
-[uWC::Err][2022-09-02 17:55:24] WindowsGraphicsCapture::CreateItem() threw an WinRT exception: 0x80070057 매개 변수가 틀립니다.
-[uWC::Err][2022-09-02 17:55:25] WindowsGraphicsCapture::CreateItem() threw an WinRT exception: 0x80070057 매개 변수가 틀립니다.
-[uWC::Log][2022-09-02 17:57:35] Stop
+[uWC::Log][2022-09-02 18:19:24] Start
+[uWC::Err][2022-09-02 18:19:24] WindowsGraphicsCapture::CreateItem() threw an WinRT exception: 0x80070057 매개 변수가 틀립니다.
+[uWC::Err][2022-09-02 18:19:24] WindowsGraphicsCapture::CreateItem() threw an WinRT exception: 0x80070057 매개 변수가 틀립니다.
+[uWC::Err][2022-09-02 18:19:24] WindowsGraphicsCapture::CreateItem() threw an WinRT exception: 0x80070057 매개 변수가 틀립니다.
+[uWC::Err][2022-09-02 18:19:24] WindowsGraphicsCapture::CreateItem() threw an WinRT exception: 0x80070057 매개 변수가 틀립니다.
+[uWC::Err][2022-09-02 18:19:24] WindowsGraphicsCapture::CreateItem() threw an WinRT exception: 0x80070057 매개 변수가 틀립니다.
+[uWC::Err][2022-09-02 18:19:24] WindowsGraphicsCapture::CreateItem() threw an WinRT exception: 0x80070057 매개 변수가 틀립니다.
+[uWC::Err][2022-09-02 18:19:24] WindowsGraphicsCapture::CreateItem() threw an WinRT exception: 0x80070057 매개 변수가 틀립니다.
+[uWC::Err][2022-09-02 18:19:24] WindowsGraphicsCapture::CreateItem() threw an WinRT exception: 0x80070057 매개 변수가 틀립니다.
+[uWC::Err][2022-09-02 18:19:24] WindowsGraphicsCapture::CreateItem() threw an WinRT exception: 0x80070057 매개 변수가 틀립니다.
+[uWC::Err][2022-09-02 18:19:24] WindowsGraphicsCapture::CreateItem() threw an WinRT exception: 0x80070057 매개 변수가 틀립니다.
+[uWC::Err][2022-09-02 18:19:24] WindowsGraphicsCapture::CreateItem() threw an WinRT exception: 0x80070057 매개 변수가 틀립니다.
+[uWC::Err][2022-09-02 18:19:24] WindowsGraphicsCapture::CreateItem() threw an WinRT exception: 0x80070057 매개 변수가 틀립니다.
+[uWC::Err][2022-09-02 18:19:24] WindowsGraphicsCapture::CreateItem() threw an WinRT exception: 0x80070057 매개 변수가 틀립니다.
+[uWC::Err][2022-09-02 18:20:11] WindowsGraphicsCapture::CreateItem() threw an WinRT exception: 0x80070057 매개 변수가 틀립니다.
+[uWC::Err][2022-09-02 18:20:11] WindowsGraphicsCapture::CreateItem() threw an WinRT exception: 0x80070057 매개 변수가 틀립니다.
+[uWC::Err][2022-09-02 18:20:11] WindowsGraphicsCapture::CreateItem() threw an WinRT exception: 0x80070057 매개 변수가 틀립니다.
+[uWC::Log][2022-09-02 18:20:23] Stop
