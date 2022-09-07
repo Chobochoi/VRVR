@@ -56,33 +56,33 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Magic Light Probes\Editor\DependencyChecker.cs" />
+    <Compile Include="Assets\Magic Light Probes\Editor\MLPEditor.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\OVROverlayCanvas\Editor\OVROverlayCanvasEditor.cs" />
+    <Compile Include="Assets\Magic Light Probes\Editor\MLPLightEditor.cs" />
+    <Compile Include="Assets\Magic Light Probes\Editor\MLPUtilities.cs" />
+    <Compile Include="Assets\Magic Light Probes\Editor\MLPInfoWindow.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Editor\BuildSamples.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Editor\OculusSampleFrameworkUtil.cs" />
+    <Compile Include="Assets\Magic Light Probes\Editor\MLPCombinedMeshEditor.cs" />
+    <Compile Include="Assets\Magic Light Probes\Editor\MLPVolumeEditor.cs" />
+    <Compile Include="Assets\Magic Light Probes\Editor\MLPUpdater.cs" />
+    <Compile Include="Assets\Magic Light Probes\Editor\MLPManager.cs" />
+    <Compile Include="Assets\Magic Light Probes\Editor\MLPPortal.cs" />
+    <Compile Include="Assets\Magic Light Probes\Editor\MLPQuickEditingEditor.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Gradle\Editor\Utils.cs" />
+    <Compile Include="Assets\Magic Light Probes\Editor\MLPCombinedVolumeEditor.cs" />
     <Compile Include="Assets\Samples\OpenXR Plugin\1.4.2\Intercept Feature\Editor\InterceptCreateSessionFeatureEditor.cs" />
     <Compile Include="Assets\Photon\PhotonVoice\Demos\DemoVoicePun\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Editor\BuildAssetPackages.cs" />
+    <Compile Include="Assets\Magic Light Probes\Editor\MLPTooltipManager.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Firebase\Editor\FirebaseEnabler.cs" />
+    <Compile Include="Assets\Magic Light Probes\Editor\GeneralMethods.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Video\Editor\AndroidVideoEditorUtil.cs" />
+    <Compile Include="Assets\Magic Light Probes\Editor\MLSForceNoProbesEditor.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\Editor\TeleportTransitionWarpInspector.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Video\Editor\MediaPlayerImageEditor.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\Editor\ChatEditor.cs" />
-    <Compile Include="Assets\Magic Light Probes\Editor\DependencyChecker.cs" />
-    <Compile Include="Assets\Magic Light Probes\Editor\MLPManager.cs" />
-    <Compile Include="Assets\Magic Light Probes\Editor\MLPPortal.cs" />
-    <Compile Include="Assets\Magic Light Probes\Editor\MLPCombinedVolumeEditor.cs" />
-    <Compile Include="Assets\Magic Light Probes\Editor\MLPLightEditor.cs" />
-    <Compile Include="Assets\Magic Light Probes\Editor\MLPTooltipManager.cs" />
-    <Compile Include="Assets\Magic Light Probes\Editor\MLPUtilities.cs" />
-    <Compile Include="Assets\Magic Light Probes\Editor\MLPQuickEditingEditor.cs" />
-    <Compile Include="Assets\Magic Light Probes\Editor\MLPCombinedMeshEditor.cs" />
-    <Compile Include="Assets\Magic Light Probes\Editor\MLPUpdater.cs" />
-    <Compile Include="Assets\Magic Light Probes\Editor\MLPVolumeEditor.cs" />
-    <Compile Include="Assets\Magic Light Probes\Editor\MLSForceNoProbesEditor.cs" />
-    <Compile Include="Assets\Magic Light Probes\Editor\MLPInfoWindow.cs" />
-    <Compile Include="Assets\Magic Light Probes\Editor\MLPEditor.cs" />
-    <Compile Include="Assets\Magic Light Probes\Editor\GeneralMethods.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -878,6 +878,10 @@
       <Project>{59A81BBB-D913-50BA-B948-A53E8C361B77}</Project>
       <Name>Facebook.WitAI</Name>
     </ProjectReference>
+    <ProjectReference Include="MLMExtensions.csproj">
+      <Project>{291AF733-747D-473C-3A4B-FCF1B76A6121}</Project>
+      <Name>MLMExtensions</Name>
+    </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.csproj">
       <Project>{36D95032-AADB-9996-0AC6-DCC2659D7FD7}</Project>
       <Name>PhotonUnityNetworking</Name>
@@ -1025,10 +1029,6 @@
     <ProjectReference Include="VoiceSDK.Runtime.csproj">
       <Project>{BFCB1A71-A1B1-F655-2E3A-49328AF55F29}</Project>
       <Name>VoiceSDK.Runtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="MLMExtensions.csproj">
-      <Project>{291AF733-747D-473C-3A4B-FCF1B76A6121}</Project>
-      <Name>MLMExtensions</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -4,56 +4,39 @@ using UnityEngine;
 
 public class ScaleManager : MonoBehaviour
 {
-    [Header("Ray")]
-    public LineRenderer ray;
-    public LayerMask hitRayMask;
-    public float distance = 100f;
-
-    [Header("Reticle Point")]
-    public GameObject reticlePoint;
-    public bool showReticle = true;
-
-    private void Awake()
+    [SerializeField] float MaxScale = 2f;
+    [SerializeField] float MinScale = 0.5f;
+    float rayDistance = 30f;
+    private void Start()
     {
-        Off();
     }
 
-    public void On()
+    void Update()
     {
-        StopAllCoroutines();
-        StartCoroutine(Process());
+        ObjHit();
     }
-
-    public void Off()
+    GameObject temp;
+    
+    public void ObjHit()
     {
-        StopAllCoroutines();
-
-        ray.enabled = false;
-        reticlePoint.SetActive(false);
-    }
-
-    private IEnumerator Process()
-    {
-        while (true)
-        {
-            if (Physics.Raycast(transform.position, transform.forward,
-                out RaycastHit hitInfo, distance, hitRayMask))
-
+        Ray ray = new Ray(transform.position, transform.forward * rayDistance);
+        RaycastHit hitData;
+               
+        if (Physics.Raycast(transform.position, transform.forward, out hitData, Mathf.Infinity, LayerMask.GetMask("Object")))
             {
-                ray.SetPosition(1, transform.InverseTransformPoint(hitInfo.point));
-                ray.enabled = true;
-
-                reticlePoint.transform.position = hitInfo.point;
-                reticlePoint.SetActive(showReticle);
+                hitData.transform.localScale *= 2;
+                LayerMask.GetMask("Object");
+                hitData.transform.localScale = new Vector3(MaxScale, MaxScale, MaxScale);
+                temp = hitData.collider.gameObject;
             }
-            else
+        else
             {
-                ray.enabled = false;
-
-                reticlePoint.SetActive(false);
-            }
-
-            yield return null;
+                if (temp != null)
+                hitData.transform.localScale *= 0.5f;
+            hitData.transform.localScale = new Vector3(MinScale, MinScale, MinScale);
         }
+        
+        
+    
     }
 }

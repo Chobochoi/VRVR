@@ -65,6 +65,9 @@
     <Compile Include="Assets\Oculus\SampleFramework\Usage\SceneManager\Scripts\BouncingBallMgr.cs" />
     <Compile Include="Assets\Photon\PhotonLibs\WebSocket\SocketWebTcp.cs" />
     <Compile Include="Assets\Photon\PhotonVoice\Demos\DemoVoicePun\Standard Assets\CrossPlatformInput\Scripts\ButtonHandler.cs" />
+    <Compile Include="Assets\Magic Light Probes\Passes\FindAreasAtShadingBorders.cs" />
+    <Compile Include="Assets\Magic Light Probes\MLPSettings.cs" />
+    <Compile Include="Assets\Magic Light Probes\MagicLightProbes.cs" />
     <Compile Include="Assets\Scripts\UnityPurchasing\generated\AppleStoreKitTestTangle.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\PassthroughProjectionSurface.cs" />
     <Compile Include="Assets\Photon\PhotonVoice\Demos\DemoVoicePun\Standard Assets\CrossPlatformInput\Scripts\VirtualInput.cs" />
@@ -77,9 +80,12 @@
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\AppSettingsExtensions.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\CustomHands\Scripts\HandPose.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\Tools\InteractableTool.cs" />
+    <Compile Include="Assets\Magic Light Probes\Passes\FindOutOfRangePoins.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\EnableUnpremultipliedAlpha.cs" />
     <Compile Include="Assets\uWindowCapture\Samples\RayCast\UwcRayCastExample.cs" />
+    <Compile Include="Assets\Magic Light Probes\Passes\FindClosestPoints.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Video\Plugins\Android\NativeVideoPlayer.cs" />
+    <Compile Include="Assets\Magic Light Probes\MLPCombinedVolume.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportAimVisualLaser.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Video\Scripts\MoviePlayerSample.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportDestination.cs" />
@@ -88,7 +94,9 @@
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\GrabObject.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\SimpleCapsuleWithStickMovement.cs" />
     <Compile Include="Assets\uWindowCapture\Samples\Only Child Window\UwcChildWindowExample.cs" />
+    <Compile Include="Assets\Magic Light Probes\Passes\SetDistanceFromGeometry.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\AugmentedObject.cs" />
+    <Compile Include="Assets\02.Script\ScaleManager.cs" />
     <Compile Include="Assets\Photon\PhotonVoice\Demos\DemoVoicePun\Scripts\CharacterInstantiation.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\InteractableRegistry.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\SceneManager\Scripts\PassthroughPlayInEditor.cs" />
@@ -97,6 +105,7 @@
     <Compile Include="Assets\Oculus\SampleFramework\Core\DebugUI\Scripts\HandedInputSelector.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\DistanceGrab\Scripts\DistanceGrabbable.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\Utils\Pose.cs" />
+    <Compile Include="Assets\Magic Light Probes\MLPQuickEditing.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportInputHandlerHMD.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportInputHandler.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\DistanceGrab\Scripts\GrabManager.cs" />
@@ -111,13 +120,16 @@
     <Compile Include="Assets\Photon\PhotonVoice\Demos\DemoVoiceUI\Scripts\PhotonDemoExtensions.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportTransitionWarp.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Video\Scripts\VectorUtil.cs" />
+    <Compile Include="Assets\Magic Light Probes\Passes\FindOutOfRangeAreas.cs" />
     <Compile Include="Assets\uWindowCapture\Samples\New Window\UwcNewWindowExample.cs" />
+    <Compile Include="Assets\Magic Light Probes\MLPLight.cs" />
     <Compile Include="Assets\02.Script\Data.cs" />
     <Compile Include="Assets\Scripts\UnityPurchasing\generated\AppleTangle.cs" />
     <Compile Include="Assets\Photon\PhotonVoice\Demos\DemoVoiceUI\Scripts\SidebarToggle.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\DistanceGrab\Scripts\PauseOnInputLoss.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\InteractableToolsCreator.cs" />
     <Compile Include="Assets\Photon\PhotonVoice\Demos\DemoVoiceUI\Scripts\BackgroundMusicController.cs" />
+    <Compile Include="Assets\Magic Light Probes\MLPPrefab.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\DebugUI\Scripts\DebugUIBuilder.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\EventSystemSpawner.cs" />
     <Compile Include="Assets\Photon\PhotonVoice\Demos\DemoProximityVoiceChat\Scripts\ChangeName.cs" />
@@ -139,6 +151,7 @@
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\TrainTrack.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\DistanceGrab\Scripts\DistanceGrabber.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\SpatialAnchor\Scripts\SpatialAnchorLoader.cs" />
+    <Compile Include="Assets\Magic Light Probes\Passes\CheckForLightLeakAreas.cs" />
     <Compile Include="Assets\Photon\PhotonVoice\Demos\DemoVoicePun\Scripts\SoundsForJoinAndLeave.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\Interactable.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\TouchControllers\TouchController.cs" />
@@ -150,14 +163,17 @@
     <Compile Include="Assets\Photon\PhotonVoice\Demos\DemoVoicePun\Scripts\OrthographicController.cs" />
     <Compile Include="Assets\Photon\PhotonVoice\Demos\DemoVoicePun\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\MobileInput.cs" />
     <Compile Include="Assets\Photon\PhotonVoice\Demos\DemoVoiceUI\Scripts\RemoteSpeakerUI.cs" />
+    <Compile Include="Assets\Magic Light Probes\Passes\CullByHeight.cs" />
     <Compile Include="Assets\uWindowCapture\Samples\Window List\UwcWindowListItem.cs" />
     <Compile Include="Assets\uWindowCapture\Samples\Desktop Layout\UwcDesktopLayouter.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportTargetHandlerNavMesh.cs" />
     <Compile Include="Assets\uWindowCapture\Samples\Texture Buffer\UwcGetBufferExample.cs" />
+    <Compile Include="Assets\Magic Light Probes\MLPForceSaveProbes.cs" />
     <Compile Include="Assets\Photon\PhotonVoice\Demos\DemoVoicePun\Scripts\MouseLookHelper.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\ControllerBoxController.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\AppDeeplink\UI\CustomDebugUI.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\SceneManager\Scripts\Spawnable.cs" />
+    <Compile Include="Assets\Magic Light Probes\Passes\PartialVolumeFilling.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Video\Scripts\ButtonDownListener.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportAimHandlerLaser.cs" />
     <Compile Include="Assets\02.Script\TextManager.cs" />
@@ -176,22 +192,30 @@
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\WindmillController.cs" />
     <Compile Include="Assets\02.Script\IntroManager.cs" />
     <Compile Include="Assets\02.Script\IAPManager.cs" />
+    <Compile Include="Assets\Magic Light Probes\Passes\CullingByEquivalentColor.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\SPPquad.cs" />
+    <Compile Include="Assets\Magic Light Probes\Passes\StoreNearLights.cs" />
     <Compile Include="Assets\02.Script\SceneBack.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\DebugUI\Scripts\LaserPointer.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportTransition.cs" />
     <Compile Include="Assets\Photon\PhotonVoice\Demos\DemoProximityVoiceChat\Scripts\ProximityVoiceTrigger.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\SelectionCylinder.cs" />
+    <Compile Include="Assets\Magic Light Probes\Passes\CheckNearbyGeometry.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\PanelHMDFollower.cs" />
     <Compile Include="Assets\02.Script\PlayerMove.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\AppDeeplink\AppDeeplinkUI.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\DebugUI\DebugUISample.cs" />
+    <Compile Include="Assets\Magic Light Probes\MLPVolume.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\SceneManager\Scripts\MyCustomSceneModelLoader.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\BrushController.cs" />
+    <Compile Include="Assets\Magic Light Probes\MLPForceNoProbes.cs" />
+    <Compile Include="Assets\Magic Light Probes\Passes\EquivalentProbesOptimization.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\ButtonTriggerZone.cs" />
+    <Compile Include="Assets\Magic Light Probes\Passes\CheckVisibility.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\NamePickGui.cs" />
     <Compile Include="Assets\Samples\OpenXR Plugin\1.4.2\Meshing Subsystem Feature\MeshingTeapotFeature.cs" />
     <Compile Include="Assets\Photon\PhotonVoice\Demos\DemoVoiceUI\Scripts\MicrophoneDropdownFiller.cs" />
+    <Compile Include="Assets\Magic Light Probes\Examples\Scripts\Rotator.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Firebase\AnalyticsUI.cs" />
     <Compile Include="Assets\02.Script\DetailManager.cs" />
     <Compile Include="Assets\Scripts\UnityPurchasing\generated\GooglePlayTangle.cs" />
@@ -199,6 +223,7 @@
     <Compile Include="Assets\02.Script\LobbyManager.cs" />
     <Compile Include="Assets\Keyboard Package\Scripts\GameManager.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\BoneCapsuleTriggerLogic.cs" />
+    <Compile Include="Assets\Magic Light Probes\Passes\DublicateVertical.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\DistanceGrab\Scripts\ColorGrabbable.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Video\Scripts\MediaPlayerImage.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\DistanceGrab\Scripts\DistanceGrabberSample.cs" />
@@ -219,6 +244,8 @@
     <Compile Include="Assets\Photon\PhotonVoice\Demos\DemoVoicePun\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\StandaloneInput.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportTransitionBlink.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\IgnoreUiRaycastWhenInactive.cs" />
+    <Compile Include="Assets\Magic Light Probes\Passes\FindGeometryIntersections.cs" />
+    <Compile Include="Assets\Magic Light Probes\MLPCombinedMesh.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\Tools\PinchStateModule.cs" />
     <Compile Include="Assets\02.Script\ServerManager.cs" />
     <Compile Include="Assets\02.Script\LobbyCount.cs" />
@@ -227,6 +254,7 @@
     <Compile Include="Assets\Oculus\SampleFramework\Usage\SceneManager\Scripts\RequestCaptureFlow.cs" />
     <Compile Include="Assets\02.Script\TeleportManager.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\SceneManager\Scripts\BouncingBallLogic.cs" />
+    <Compile Include="Assets\Magic Light Probes\Passes\CalculateLightIntensity.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportTransitionInstant.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\SpatialAnchor\Scripts\Anchor.cs" />
     <Compile Include="Assets\Keyboard Package\Scripts\KeyboardController.cs" />
@@ -236,7 +264,9 @@
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\FriendItem.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\InteractableToolsInputRouter.cs" />
     <Compile Include="Assets\Keyboard Package\Scripts\KeyboardButtonController.cs" />
+    <Compile Include="Assets\Magic Light Probes\Examples\Scripts\PingPong.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\ObjectManipulator.cs" />
+    <Compile Include="Assets\Magic Light Probes\Passes\CullGeometryCollisions.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\OverlayPassthrough.cs" />
     <Compile Include="Assets\Photon\PhotonVoice\Demos\DemoVoiceUI\Scripts\DemoVoiceUI.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\LocomotionTeleport.cs" />
@@ -245,6 +275,7 @@
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportOrientationHandler360.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportAimHandler.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\FlashlightController.cs" />
+    <Compile Include="Assets\Magic Light Probes\MLPTracePoint.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\SpatialAnchor\Scripts\AnchorHelpers.cs" />
     <Compile Include="Assets\Photon\PhotonVoice\Demos\DemoVoicePun\Standard Assets\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\Tools\RayToolView.cs" />
@@ -252,55 +283,24 @@
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\TrainCarBase.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextToggleIsOnTransition.cs" />
     <Compile Include="Assets\Photon\PhotonVoice\Demos\DemoVoicePun\Scripts\ThirdPersonController.cs" />
+    <Compile Include="Assets\Magic Light Probes\Passes\FindGeometryEdges.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\Tools\RayTool.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\Tools\FingerTipPokeToolView.cs" />
+    <Compile Include="Assets\Magic Light Probes\Passes\RemoveUnusedPoints.cs" />
     <Compile Include="Assets\Photon\PhotonVoice\Demos\DemoVoicePun\Standard Assets\CrossPlatformInput\Scripts\MobileControlRig.cs" />
     <Compile Include="Assets\WhiteCity\Textures\Other\Offer\LightingTools_Offer.cs" />
+    <Compile Include="Assets\Magic Light Probes\Passes\CullByLightIntensity.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\OVROverlay\Scripts\OVROverlaySample.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\OnStartDelete.cs" />
     <Compile Include="Assets\Photon\PhotonVoice\Demos\DemoVoicePun\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
+    <Compile Include="Assets\Magic Light Probes\Passes\FillVolume.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportTargetHandler.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\PassthroughStyler.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\SpatialAnchor\Scripts\AnchorUIManager.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\SelectivePassthroughExperience.cs" />
-    <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\TrackSegment.cs" />
-    <Compile Include="Assets\Magic Light Probes\Passes\CheckVisibility.cs" />
-    <Compile Include="Assets\Magic Light Probes\MLPSettings.cs" />
-    <Compile Include="Assets\Magic Light Probes\MLPLight.cs" />
-    <Compile Include="Assets\Magic Light Probes\Passes\CalculateLightIntensity.cs" />
-    <Compile Include="Assets\Magic Light Probes\MLPCombinedVolume.cs" />
-    <Compile Include="Assets\Magic Light Probes\Passes\CullByHeight.cs" />
-    <Compile Include="Assets\Magic Light Probes\MagicLightProbes.cs" />
-    <Compile Include="Assets\Magic Light Probes\MLPQuickEditing.cs" />
-    <Compile Include="Assets\Magic Light Probes\Passes\RemoveUnusedPoints.cs" />
-    <Compile Include="Assets\Magic Light Probes\Passes\CheckNearbyGeometry.cs" />
-    <Compile Include="Assets\Magic Light Probes\Passes\FindGeometryIntersections.cs" />
-    <Compile Include="Assets\Magic Light Probes\Examples\Scripts\Rotator.cs" />
-    <Compile Include="Assets\Magic Light Probes\MLPCombinedMesh.cs" />
-    <Compile Include="Assets\Magic Light Probes\MLPForceSaveProbes.cs" />
-    <Compile Include="Assets\Magic Light Probes\Passes\CullByLightIntensity.cs" />
-    <Compile Include="Assets\Magic Light Probes\MLPTracePoint.cs" />
-    <Compile Include="Assets\Magic Light Probes\MLPPrefab.cs" />
-    <Compile Include="Assets\Magic Light Probes\Passes\FillVolume.cs" />
-    <Compile Include="Assets\Magic Light Probes\Examples\Scripts\PingPong.cs" />
-    <Compile Include="Assets\Magic Light Probes\MLPVolume.cs" />
-    <Compile Include="Assets\Magic Light Probes\Passes\DublicateVertical.cs" />
-    <Compile Include="Assets\Magic Light Probes\Passes\PartialVolumeFilling.cs" />
-    <Compile Include="Assets\Magic Light Probes\Passes\SetDistanceFromGeometry.cs" />
-    <Compile Include="Assets\Magic Light Probes\Passes\CullGeometryCollisions.cs" />
-    <Compile Include="Assets\Magic Light Probes\Passes\CullingByEquivalentColor.cs" />
-    <Compile Include="Assets\Magic Light Probes\Passes\FindOutOfRangePoins.cs" />
     <Compile Include="Assets\Magic Light Probes\MLPPointData.cs" />
     <Compile Include="Assets\Magic Light Probes\MLPPoint.cs" />
-    <Compile Include="Assets\Magic Light Probes\MLPForceNoProbes.cs" />
-    <Compile Include="Assets\Magic Light Probes\Passes\StoreNearLights.cs" />
-    <Compile Include="Assets\Magic Light Probes\Passes\FindAreasAtShadingBorders.cs" />
-    <Compile Include="Assets\Magic Light Probes\Passes\FindClosestPoints.cs" />
-    <Compile Include="Assets\Magic Light Probes\Passes\EquivalentProbesOptimization.cs" />
-    <Compile Include="Assets\Magic Light Probes\Passes\CheckForLightLeakAreas.cs" />
-    <Compile Include="Assets\Magic Light Probes\Passes\FindGeometryEdges.cs" />
-    <Compile Include="Assets\Magic Light Probes\Passes\FindOutOfRangeAreas.cs" />
-    <Compile Include="Assets\02.Script\ScaleManager.cs" />
+    <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\TrackSegment.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\uWindowCapture\Plugins\x86_64\uWindowCapture.dll" />
@@ -1175,6 +1175,10 @@
       <Project>{59A81BBB-D913-50BA-B948-A53E8C361B77}</Project>
       <Name>Facebook.WitAI</Name>
     </ProjectReference>
+    <ProjectReference Include="MLMExtensions.csproj">
+      <Project>{291AF733-747D-473C-3A4B-FCF1B76A6121}</Project>
+      <Name>MLMExtensions</Name>
+    </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.csproj">
       <Project>{36D95032-AADB-9996-0AC6-DCC2659D7FD7}</Project>
       <Name>PhotonUnityNetworking</Name>
@@ -1322,10 +1326,6 @@
     <ProjectReference Include="VoiceSDK.Runtime.csproj">
       <Project>{BFCB1A71-A1B1-F655-2E3A-49328AF55F29}</Project>
       <Name>VoiceSDK.Runtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="MLMExtensions.csproj">
-      <Project>{291AF733-747D-473C-3A4B-FCF1B76A6121}</Project>
-      <Name>MLMExtensions</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

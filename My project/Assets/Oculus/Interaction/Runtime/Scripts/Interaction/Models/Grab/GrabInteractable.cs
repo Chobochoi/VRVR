@@ -133,6 +133,24 @@ namespace Oculus.Interaction
             _physicsGrabbable.ApplyVelocities(linearVelocity, angularVelocity);
         }
 
+        public void ObjHit()
+        {
+            Ray ray = new Ray(transform.position, transform.forward);
+            RaycastHit hitData;
+
+            if (OVRInput.GetDown(OVRInput.Button.One))
+            {
+                if (Physics.Raycast(ray, out hitData))
+                {
+                    Debug.DrawRay(transform.position, transform.forward * 10, Color.blue, 0.4f);
+                    hitData.transform.localScale *= 2;
+                    //LayerMask.GetMask("Object"))     
+                    //hitData.transform.localScale = new Vector3(MaxScale, MaxScale, MaxScale);
+                }
+            }
+        }
+
+
         #region Inject
 
         public void InjectAllGrabInteractable(Rigidbody rigidbody)

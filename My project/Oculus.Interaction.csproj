@@ -234,8 +234,8 @@
     <Compile Include="Assets\Oculus\Interaction\Runtime\Scripts\PoseDetection\FingerFeatureStateThresholds.cs" />
     <Compile Include="Assets\Oculus\Interaction\Runtime\Scripts\PoseDetection\Debug\TransformRecognizerDebugVisual.cs" />
     <Compile Include="Assets\Oculus\Interaction\Runtime\Scripts\Grab\SnapSurfaces\ISnapSurface.cs" />
-    <Compile Include="Assets\Oculus\Interaction\Runtime\Scripts\Interaction\Grabbable\TwoGrabRotateTransformer.cs" />
     <Compile Include="Assets\Oculus\Interaction\Runtime\Scripts\Interaction\Grabbable\OneGrabPhysicsJointTransformer.cs" />
+    <Compile Include="Assets\Oculus\Interaction\Runtime\Scripts\Interaction\Grabbable\TwoGrabRotateTransformer.cs" />
     <Compile Include="Assets\Oculus\Interaction\Runtime\Scripts\Input\Hands\IHandSkeletonProvider.cs" />
     <Compile Include="Assets\Oculus\Interaction\Runtime\Scripts\Interaction\Visuals\InteractorDebugVisual.cs" />
     <Compile Include="Assets\Oculus\Interaction\Runtime\Scripts\Selection\Hands\CenterEyeOffset.cs" />

@@ -68,7 +68,7 @@ namespace Oculus.Interaction
                 return Surface.Raycast(ray, out hit, maxDistance);
             }
             return false;
-        }
+        }       
 
         public IMovement GenerateMovement(in Pose to, in Pose source)
         {
