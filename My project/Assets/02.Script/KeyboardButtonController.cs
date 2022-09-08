@@ -16,6 +16,7 @@ public class KeyboardButtonController : MonoBehaviour
     {
         inputManager = GameObject.FindGameObjectWithTag("InputField").GetComponent<InputManager>();
 
+        Debug.Log(inputManager);
         SetContainerBorderColor(ColorDataStore.GetKeyboardBorderColor());
         SetContainerFillColor(ColorDataStore.GetKeyboardFillColor());
         SetContainerTextColor(ColorDataStore.GetKeyboardTextColor());
@@ -38,7 +39,7 @@ public class KeyboardButtonController : MonoBehaviour
             GameManager.Instance.AddLetter(containerText.text);
         }
         else
-        {
+        {            
             inputManager.currentInputField.text += containerText.text;
         }
     }
