@@ -1,4 +1,5 @@
 using UnityEngine;
+ 
 
 public class ScaleManager : MonoBehaviour
 {
@@ -17,21 +18,22 @@ public class ScaleManager : MonoBehaviour
         Ray ray = new Ray(transform.position, transform.forward * rayDistance);
         RaycastHit hitData;
 
-        if (Physics.Raycast(transform.position, transform.forward, out hitData, Mathf.Infinity, LayerMask.GetMask("Object")))
+        if(OVRInput.GetDown(OVRInput.Button.One, OVRInput.Controller.RHand))        
         {
-            temp = hitData.collider.gameObject;
-            hitData.transform.localScale = new Vector3(MaxScale, MaxScale, MaxScale);
-        }
-        else
-        {
-            if (temp != null)
+            if (Physics.Raycast(transform.position, transform.forward, out hitData, Mathf.Infinity, LayerMask.GetMask("Object")))
             {
-                temp.transform.localScale = new Vector3(MinScale, MinScale, MinScale);
-                temp = null;
+                temp = hitData.collider.gameObject;
+                hitData.transform.localScale = new Vector3(MaxScale, MaxScale, MaxScale);
             }
-        }
-
-
+            else
+            {
+                if (temp != null)
+                {
+                    temp.transform.localScale = new Vector3(MinScale, MinScale, MinScale);
+                    temp = null;
+                }
+            }
+        }     
     }
 }
 

@@ -176,7 +176,6 @@
     <Compile Include="Assets\Magic Light Probes\Passes\PartialVolumeFilling.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Video\Scripts\ButtonDownListener.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportAimHandlerLaser.cs" />
-    <Compile Include="Assets\02.Script\TextManager.cs" />
     <Compile Include="Assets\uWindowCapture\Samples\GetPixels\UwcGetPixelsExample.cs" />
     <Compile Include="Assets\Photon\PhotonVoice\Demos\DemoProximityVoiceChat\Scripts\ChangeColor.cs" />
     <Compile Include="Assets\Photon\PhotonVoice\Demos\DemoVoicePun\Scripts\VoiceDemoUI.cs" />

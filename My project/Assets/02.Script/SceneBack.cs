@@ -2,9 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class SceneBack : MonoBehaviour
+using Photon.Pun;
+
+
+public class SceneBack : MonoBehaviourPunCallbacks
 {
-   public void BackScene()
+   private void OnExitClick()
+    {
+        PhotonNetwork.LeaveRoom();
+    }
+    
+   public void OnLeftRoom()
    {
         SceneManager.LoadScene("01.Scenes/04.Show");
    }
