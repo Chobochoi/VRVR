@@ -8,8 +8,8 @@ public class CharactorManager : MonoBehaviourPunCallbacks
 {
     void Start()
     {
-        PhotonNetwork.Instantiate("Charator", new Vector3
-            (Random.Range(0, 5), 1, Random.Range(0, 5)), Quaternion.identity);
+        PhotonNetwork.Instantiate("Player", new Vector3
+            (Random.Range(-4, 15), -1, Random.Range(-5, 5)), Quaternion.identity);
     }
 
     void Update()

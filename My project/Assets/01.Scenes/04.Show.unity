@@ -4486,7 +4486,7 @@ GameObject:
   - component: {fileID: 1292499121}
   - component: {fileID: 1292499125}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: Teleport Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6006,6 +6006,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1615282022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1615282020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!4 &1615282025 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 470241242903645643, guid: dcb2daddfcc92634085b428ccbb887b9, type: 3}
@@ -6821,10 +6837,10 @@ MonoBehaviour:
   unityMicrophoneDevice: 
   photonMicrophoneDeviceId: -1
   interestGroup: 0
-  debugEchoMode: 0
+  debugEchoMode: 1
   reliableMode: 0
   encrypt: 0
-  transmitEnabled: 0
+  transmitEnabled: 1
   samplingRate: 24000
   frameDuration: 20000
   bitrate: 30000
@@ -6872,7 +6888,7 @@ MonoBehaviour:
   runInBackground: 1
   statsResetInterval: 1000
   speakerPrefab: {fileID: 0}
-  primaryRecorder: {fileID: 0}
+  primaryRecorder: {fileID: 1747886344}
   globalRecordersLogLevel: 3
   globalSpeakersLogLevel: 3
   globalPlaybackDelay: -1
@@ -7757,7 +7773,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2020390675}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6743f7d6f0e0c2046b29d355837d14e1, type: 3}
+  m_Script: {fileID: 11500000, guid: 3524adccecaa10a41a786aa7e5c68d3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &2020390677
@@ -8049,7 +8065,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 470241242903645643, guid: dcb2daddfcc92634085b428ccbb887b9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.1176
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 470241242903645643, guid: dcb2daddfcc92634085b428ccbb887b9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8103,7 +8119,8 @@ PrefabInstance:
       propertyPath: UsePrimaryRecorder
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6579748288384051927, guid: dcb2daddfcc92634085b428ccbb887b9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: dcb2daddfcc92634085b428ccbb887b9, type: 3}
 --- !u!114 &6737077649018988288 stripped
 MonoBehaviour:
