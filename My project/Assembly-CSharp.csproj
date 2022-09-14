@@ -93,6 +93,7 @@
     <Compile Include="Assets\02.Script\Keyboard\InputManager.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\TrainButtonVisualController.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\GrabObject.cs" />
+    <Compile Include="Assets\02.Script\01.Scene\Button1.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\SimpleCapsuleWithStickMovement.cs" />
     <Compile Include="Assets\uWindowCapture\Samples\Only Child Window\UwcChildWindowExample.cs" />
     <Compile Include="Assets\Magic Light Probes\Passes\SetDistanceFromGeometry.cs" />
