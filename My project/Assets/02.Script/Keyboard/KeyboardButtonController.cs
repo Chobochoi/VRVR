@@ -34,29 +34,38 @@ public class KeyboardButtonController : MonoBehaviour
 
     public void AddLetter()
     {
-        if (GameManager.Instance != null)
+        if (InputManager.Instance.isActiveAndEnabled && InputManager.Instance.currentInputField != null)
         {
-            GameManager.Instance.AddLetter(containerText.text);
-        }
-        else
-        {            
-            inputManager.currentInputField.text += containerText.text;
+            if (GameManager.Instance != null)
+            {
+                GameManager.Instance.AddLetter(containerText.text);
+            }
+            else
+            {
+                Debug.Log(InputManager.Instance);
+                Debug.Log(containerText);
+                InputManager.Instance.currentInputField.text += containerText.text;
+            }
         }
     }
     public void DeleteLetter()
     {
-        if (GameManager.Instance != null)
+        if(InputManager.Instance.isActiveAndEnabled && InputManager.Instance.currentInputField != null)
         {
-            GameManager.Instance.DeleteLetter();
-        }
-
-        else
-        {
-            if (inputManager.currentInputField.text.Length != 0)
+            if (GameManager.Instance != null)
             {
-                inputManager.currentInputField.text = inputManager.currentInputField.text.Remove(inputManager.currentInputField.text.Length - 1, 1);
+                GameManager.Instance.DeleteLetter();
+
             }
-            Debug.Log("Last char deleted");
+
+            else
+            {
+                if (InputManager.Instance.currentInputField.text.Length != 0)
+                {
+                    InputManager.Instance.currentInputField.text = InputManager.Instance.currentInputField.text.Remove(InputManager.Instance.currentInputField.text.Length - 1, 1);
+                }
+                Debug.Log("Last char deleted");
+            }
         }
     }
     public void SubmitWord()
@@ -71,3 +80,4 @@ public class KeyboardButtonController : MonoBehaviour
         }
     }
 }
+    

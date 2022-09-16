@@ -16,6 +16,11 @@ public class LobbyManager : MonoBehaviourPunCallbacks
 
     Dictionary<string, RoomInfo> RoomCatalog = new Dictionary<string, RoomInfo>();
 
+    private void Awake()
+    {
+        DontDestroyOnLoad(this);
+    }
+
     private void Update()
     {
         if (RoomName.text.Length > 0)
@@ -64,7 +69,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     // 추가했음 테스트. 22/09/13
     public void LeaveRoom()
     {
-        PhotonNetwork.LeaveRoom();
+        PhotonNetwork.LoadLevel("01.Scenes/02.Server");
     }
 
     public void CreateRoomObject()

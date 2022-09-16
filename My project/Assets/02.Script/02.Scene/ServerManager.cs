@@ -12,6 +12,11 @@ public class ServerManager : MonoBehaviourPunCallbacks
     public TMP_Text region;
     public TMP_Text lobby;
 
+    public void Awake()
+    {
+        DontDestroyOnLoad(this);        
+    }
+
     public void Connect()
     {
         PhotonNetwork.ConnectUsingSettings();

@@ -34,17 +34,17 @@ public class IntroManager : MonoBehaviour
 
     public void LoginFailure(PlayFabError error)
     {
-        Debug.Log("�α��� ����");
+        Debug.Log("l.f");
     }
 
     public void SignUpSuccess(RegisterPlayFabUserResult result)
     {
-        Debug.Log("ȸ������ ����");
+        Debug.Log("success");
     }
 
     public void SignUpFailure(PlayFabError error)
     {
-        Debug.Log("ȸ������ ����");
+        Debug.Log("fail");
     }
 
     public void SignUp()
