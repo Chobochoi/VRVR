@@ -14,12 +14,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     public GameObject RoomPrefab;
     public Transform RoomContent;
 
-    Dictionary<string, RoomInfo> RoomCatalog = new Dictionary<string, RoomInfo>();
-
-    private void Awake()
-    {
-        DontDestroyOnLoad(this);
-    }
+    Dictionary<string, RoomInfo> RoomCatalog = new Dictionary<string, RoomInfo>();    
 
     private void Update()
     {
@@ -64,12 +59,14 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     public override void OnJoinedRoom()
     {
         PhotonNetwork.LoadLevel("01.Scenes/04.Show");
+        DontDestroyOnLoad(this);
     }
 
     // 추가했음 테스트. 22/09/13
     public void LeaveRoom()
     {
         PhotonNetwork.LoadLevel("01.Scenes/02.Server");
+        DontDestroyOnLoad(this);
     }
 
     public void CreateRoomObject()
