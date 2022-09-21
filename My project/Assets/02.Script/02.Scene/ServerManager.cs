@@ -41,6 +41,7 @@ public class ServerManager : MonoBehaviourPunCallbacks
     }
     public override void OnConnectedToMaster()
     {
+        Debug.Log("마스터");
         switch (Data.count)
         {
             case 0: PhotonNetwork.JoinLobby(new TypedLobby("A Company", LobbyType.Default));
@@ -54,6 +55,7 @@ public class ServerManager : MonoBehaviourPunCallbacks
 
     public override void OnJoinedLobby()
     {
-        PhotonNetwork.LoadLevel("01.Scenes/03.Lobby");
+        PhotonNetwork.LoadLevel("01.Scenes/03.Show");
+        Debug.Log("로비에욤");
     }
 }

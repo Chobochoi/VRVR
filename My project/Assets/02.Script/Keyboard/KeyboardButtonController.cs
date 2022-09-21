@@ -36,9 +36,9 @@ public class KeyboardButtonController : MonoBehaviour
     {
         if (InputManager.Instance.isActiveAndEnabled && InputManager.Instance.currentInputField != null)
         {
-            if (GameManager.Instance != null)
+            if (KeyBoardSetManager.Instance != null)
             {
-                GameManager.Instance.AddLetter(containerText.text);
+                KeyBoardSetManager.Instance.AddLetter(containerText.text);
             }
             else
             {
@@ -52,9 +52,9 @@ public class KeyboardButtonController : MonoBehaviour
     {
         if(InputManager.Instance.isActiveAndEnabled && InputManager.Instance.currentInputField != null)
         {
-            if (GameManager.Instance != null)
+            if (KeyBoardSetManager.Instance != null)
             {
-                GameManager.Instance.DeleteLetter();
+                KeyBoardSetManager.Instance.DeleteLetter();
 
             }
 
@@ -70,9 +70,9 @@ public class KeyboardButtonController : MonoBehaviour
     }
     public void SubmitWord()
     {
-        if (GameManager.Instance != null)
+        if (KeyBoardSetManager.Instance != null)
         {
-            GameManager.Instance.SubmitWord();
+            KeyBoardSetManager.Instance.SubmitWord();
         }
         else
         {
