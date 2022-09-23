@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviourPunCallbacks
     {
         PhotonNetwork.LoadLevel("01.Scenes/02.Server");
         PhotonNetwork.LeaveRoom();
-    }   
+        Debug.Log("방나감");
+    }
 
 }
