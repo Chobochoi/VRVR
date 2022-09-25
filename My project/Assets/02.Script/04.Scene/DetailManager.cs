@@ -15,7 +15,7 @@ public class DetailManager : MonoBehaviourPunCallbacks
         switch (btn.name)
         {
             case "Button1":
-                SceneManager.LoadScene("01.Scenes/04.Detail1");
+                SceneManager.LoadScene("01.Scenes/04.Detail");
                 break;
             case "Button2":
                 SceneManager.LoadScene("01.Scenes/04.Detail2");

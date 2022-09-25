@@ -219,8 +219,8 @@
     <Compile Include="Assets\Oculus\Platform\Scripts\VoipInput.cs" />
     <Compile Include="Assets\Oculus\Platform\Scripts\Models\AssetFileDownloadResult.cs" />
     <Compile Include="Assets\Oculus\Platform\Scripts\TimeWindow.cs" />
-    <Compile Include="Assets\Oculus\Platform\Scripts\CloudStorageDataStatus.cs" />
     <Compile Include="Assets\Oculus\Platform\Scripts\Models\ApplicationInvite.cs" />
+    <Compile Include="Assets\Oculus\Platform\Scripts\CloudStorageDataStatus.cs" />
     <Compile Include="Assets\Oculus\Platform\Scripts\Models\LivestreamingStatus.cs" />
     <Compile Include="Assets\Oculus\Platform\Scripts\AchievementType.cs" />
     <Compile Include="Assets\Oculus\Platform\Scripts\StandalonePlatform.cs" />
@@ -247,9 +247,9 @@
     <Compile Include="Assets\Oculus\Platform\Scripts\Models\UserDataStoreUpdateResponse.cs" />
     <Compile Include="Assets\Oculus\Platform\Scripts\Models\LaunchUnblockFlowResult.cs" />
     <Compile Include="Assets\Oculus\Platform\Scripts\SystemVoipStatus.cs" />
-    <Compile Include="Assets\Oculus\Platform\Samples\VrHoops\Scripts\MatchController.cs" />
     <Compile Include="Assets\Oculus\Platform\Scripts\UserPresenceStatus.cs" />
     <Compile Include="Assets\Oculus\Platform\Scripts\VoipOptions.cs" />
+    <Compile Include="Assets\Oculus\Platform\Samples\VrHoops\Scripts\MatchController.cs" />
     <Compile Include="Assets\Oculus\Platform\Samples\VrVoiceChat\Scripts\P2PManager.cs" />
     <Compile Include="Assets\Oculus\Platform\Scripts\MatchmakingOptions.cs" />
     <Compile Include="Assets\Oculus\Platform\Scripts\Models\MicrophoneAvailabilityState.cs" />

@@ -58,8 +58,8 @@
   <ItemGroup>
     <Compile Include="Assets\Oculus\Interaction\Runtime\Scripts\Grab\SnapSurfaces\BoxSurface.cs" />
     <Compile Include="Assets\Oculus\Interaction\Runtime\Scripts\Interaction\Models\TouchHandGrab\TouchShadowHand.cs" />
-    <Compile Include="Assets\Oculus\Interaction\Runtime\Scripts\Interaction\Models\TouchHandGrab\TouchHandGrabInteractable.cs" />
     <Compile Include="Assets\Oculus\Interaction\Runtime\Scripts\Utils\VersionTextVisual.cs" />
+    <Compile Include="Assets\Oculus\Interaction\Runtime\Scripts\Interaction\Models\TouchHandGrab\TouchHandGrabInteractable.cs" />
     <Compile Include="Assets\Oculus\Interaction\Runtime\Scripts\Polyline\DebugGizmos.cs" />
     <Compile Include="Assets\Oculus\Interaction\Runtime\Scripts\Interaction\Core\TagSet.cs" />
     <Compile Include="Assets\Oculus\Interaction\Runtime\Scripts\Interaction\Core\IInteractor.cs" />
@@ -94,8 +94,8 @@
     <Compile Include="Assets\Oculus\Interaction\Runtime\Scripts\Input\Hands\HandDataAsset.cs" />
     <Compile Include="Assets\Oculus\Interaction\Runtime\Scripts\PoseDetection\HmdOffset.cs" />
     <Compile Include="Assets\Oculus\Interaction\Runtime\Scripts\PoseDetection\FeatureDescription.cs" />
-    <Compile Include="Assets\Oculus\Interaction\Runtime\Scripts\Interaction\Grabbable\TwoGrabPlaneTransformer.cs" />
     <Compile Include="Assets\Oculus\Interaction\Runtime\Scripts\Input\Hands\DataModifiers\FixedScaleHand.cs" />
+    <Compile Include="Assets\Oculus\Interaction\Runtime\Scripts\Interaction\Grabbable\TwoGrabPlaneTransformer.cs" />
     <Compile Include="Assets\Oculus\Interaction\Runtime\Scripts\Input\Hands\FingersMetadata.cs" />
     <Compile Include="Assets\Oculus\Interaction\Runtime\Scripts\Interaction\Models\Ray\RayInteractor.cs" />
     <Compile Include="Assets\Oculus\Interaction\Runtime\Scripts\Grab\Visuals\HandPuppet.cs" />
@@ -195,8 +195,8 @@
     <Compile Include="Assets\Oculus\Interaction\Runtime\Scripts\Interaction\Core\InteractableGroup.cs" />
     <Compile Include="Assets\Oculus\Interaction\Runtime\Scripts\Attributes\OptionalAttribute.cs" />
     <Compile Include="Assets\Oculus\Interaction\Runtime\Scripts\DistanceGrab\Visuals\InteractorReticle.cs" />
-    <Compile Include="Assets\Oculus\Interaction\Runtime\Scripts\Interaction\ProximityField\CylinderProximityField.cs" />
     <Compile Include="Assets\Oculus\Interaction\Runtime\ThirdParty\InterfaceSupport\InterfaceAttribute.cs" />
+    <Compile Include="Assets\Oculus\Interaction\Runtime\Scripts\Interaction\ProximityField\CylinderProximityField.cs" />
     <Compile Include="Assets\Oculus\Interaction\Runtime\Scripts\PoseDetection\JointRotationActiveState.cs" />
     <Compile Include="Assets\Oculus\Interaction\Runtime\Scripts\Shapes\CylinderOrientation.cs" />
     <Compile Include="Assets\Oculus\Interaction\Runtime\Scripts\Interaction\Core\SecondaryInteractorConnection.cs" />
