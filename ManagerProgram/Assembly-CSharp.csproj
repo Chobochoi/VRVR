@@ -36,11 +36,14 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Script\Scene00\mainManager.cs" />
-     <Compile Include="Assets\Script\Example.cs" />
-     <Compile Include="Assets\Script\Scene01\ObjectController.cs" />
      <Compile Include="Assets\Script\MainManager.cs" />
+     <Compile Include="Assets\Script\Scene01\ObjectController.cs" />
+     <Compile Include="Assets\Script\Scene00\mainManager.cs" />
      <Compile Include="Assets\Script\Scene01\UICanvasController.cs" />
+     <Compile Include="Assets\Script\Example.cs" />
+     <Compile Include="Assets\Script\Scene00\GameManager.cs" />
+     <Compile Include="Assets\Script\Scene02\Player.cs" />
+     <Compile Include="Assets\Script\Scene02\UIController.cs" />
      <None Include="Assets\Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
