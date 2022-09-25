@@ -39,11 +39,11 @@
      <Compile Include="Assets\Script\MainManager.cs" />
      <Compile Include="Assets\Script\Scene01\ObjectController.cs" />
      <Compile Include="Assets\Script\Scene00\mainManager.cs" />
-     <Compile Include="Assets\Script\Scene01\UICanvasController.cs" />
-     <Compile Include="Assets\Script\Example.cs" />
-     <Compile Include="Assets\Script\Scene00\GameManager.cs" />
      <Compile Include="Assets\Script\Scene02\Player.cs" />
+     <Compile Include="Assets\Script\Scene01\UICanvasController.cs" />
+     <Compile Include="Assets\Script\Scene00\GameManager.cs" />
      <Compile Include="Assets\Script\Scene02\UIController.cs" />
+     <Compile Include="Assets\Script\Scene02\ManagerObject.cs" />
      <None Include="Assets\Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
@@ -61,6 +61,7 @@
      <None Include="Assets\Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
      <None Include="Assets\Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
      <None Include="Assets\Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+     <None Include="Assets\Shader\OutLine.shader" />
      <None Include="Assets\Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
      <None Include="Assets\Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
      <None Include="Assets\Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />

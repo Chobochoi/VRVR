@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEditor;
+using UnityEngine.SceneManagement;
 
 public class UIController : MonoBehaviour
 {
@@ -9,12 +11,43 @@ public class UIController : MonoBehaviour
     public Canvas menuCanvas;
     public bool UIONOFF = false;
     public bool UserModCheck = true;
+    public Camera userModCamera;
+    public Camera managerModCamera;
+    public GameObject userRoom;
+    public GameObject managerRoom;
+
+    void Awake()
+    {
+        userModCamera.enabled = true;
+        managerModCamera.enabled =false;
+    }
     void Update()
     {
         OpenMenuUI();
     }
 
+    public void SaveBTN()
+    {
+    }
 
+    public void ResetBTN()
+    {
+        SceneManager.LoadScene(2);
+    }
+
+    public void ExitBTN()
+    {
+#if UNITY_EDITOR
+        EditorApplication.ExitPlaymode();
+#else
+        Application.Quit();
+#endif
+    }
+
+    public void BackBTN()
+    {
+        SceneManager.LoadScene(1);
+    }
     public void OpenMenuUI()
     {
         if(Input.GetKeyDown("escape"))
@@ -57,8 +90,14 @@ public class UIController : MonoBehaviour
         {
             return;
         }
+        
         UserModCheck = true;
         canvas.gameObject.SetActive(false);
+        userRoom.SetActive(true);
+        managerRoom.SetActive(false);
+        
+        userModCamera.enabled = true;
+        managerModCamera.enabled =false;
     }
     public void ManagerMod()
     {
@@ -66,7 +105,13 @@ public class UIController : MonoBehaviour
         {
             return;
         }
+        
         UserModCheck = false;
         canvas.gameObject.SetActive(true);
+        userRoom.SetActive(false);
+        managerRoom.SetActive(true);
+        
+        userModCamera.enabled = false;
+        managerModCamera.enabled = true;
     }
 }

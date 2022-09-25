@@ -7,6 +7,8 @@ public class ObjectController : MonoBehaviour
     public float speed = 30f;
 
     public int value;
+    Vector3 ObjPos;
+
 
     void Update()
     {
@@ -16,5 +18,13 @@ public class ObjectController : MonoBehaviour
     void RotateObject()
     {
         transform.Rotate(Vector3.up * speed * Time.deltaTime);
+    }
+
+    void OnCollisionEnter(Collision other)
+    {
+        if(other.gameObject.tag == "Object")
+        {
+            Destroy(gameObject);
+        }
     }
 }
