@@ -24,7 +24,13 @@ public class ObjectController : MonoBehaviour
     {
         if(other.gameObject.tag == "Object")
         {
-            Destroy(gameObject);
+            ObjectController OC = other.gameObject.GetComponent<ObjectController>();
+            ObjectController MYOC = gameObject.GetComponent<ObjectController>();
+
+            if(MYOC.value > OC.value)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }

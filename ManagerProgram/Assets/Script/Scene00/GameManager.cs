@@ -25,8 +25,7 @@ public class GameManager : MonoBehaviour
     public int storeNum;
     public bool storeNameSecondChange = false;
     public int selectObjectNumber = -1;
-
-
+    public GameObject selectedObj;
 
 
 }

@@ -7,14 +7,22 @@ using UnityEngine.SceneManagement;
 
 public class UIController : MonoBehaviour
 {
-    public Canvas canvas;
-    public Canvas menuCanvas;
-    public bool UIONOFF = false;
-    public bool UserModCheck = true;
-    public Camera userModCamera;
-    public Camera managerModCamera;
-    public GameObject userRoom;
-    public GameObject managerRoom;
+    [HideInInspector]public Canvas canvas;
+    [HideInInspector]public Canvas menuCanvas;
+    public Canvas changeCanves;
+    public Canvas ModCanvas;
+    [HideInInspector] public bool UIONOFF = false;
+    [HideInInspector] public bool UserModCheck = true;
+    [HideInInspector] public bool ChangeModCheck = false;
+
+    [HideInInspector] public Camera userModCamera;
+    [HideInInspector] public Camera managerModCamera;
+    [HideInInspector] public GameObject userRoom;
+    [HideInInspector] public GameObject managerRoom;
+    [HideInInspector] public Button deleteBTN;
+    [HideInInspector] public ManagerObject managerObject;
+    [HideInInspector] public int selectNum = 0;
+
 
     void Awake()
     {
@@ -24,6 +32,7 @@ public class UIController : MonoBehaviour
     void Update()
     {
         OpenMenuUI();
+        SelectDeleteBTN();
     }
 
     public void SaveBTN()
@@ -114,4 +123,51 @@ public class UIController : MonoBehaviour
         userModCamera.enabled = false;
         managerModCamera.enabled = true;
     }
+
+    void SelectDeleteBTN()
+    {
+        if (GameManager.instance.selectObjectNumber == 0)
+        {
+            ColorBlock colorBlock = deleteBTN.colors;
+            colorBlock.normalColor = Color.red;
+            deleteBTN.colors = colorBlock;
+        }
+        else if(GameManager.instance.selectObjectNumber != 0)
+        {
+            ColorBlock colorBlock = deleteBTN.colors;
+            colorBlock.normalColor = Color.white;
+            deleteBTN.colors = colorBlock;
+
+        }
+    }
+
+    public void SelectObject(int number)
+    {
+        selectNum = number;
+        GameManager.instance.selectObjectNumber = selectNum;
+    }
+
+    public void ChangeBTN()
+    {
+        if (ChangeModCheck == true)
+        {
+            return;
+        }
+
+        ChangeModCheck = true;
+        ModCanvas.gameObject.SetActive(false);
+        canvas.gameObject.SetActive(false);
+        changeCanves.gameObject.SetActive(true);
+        managerObject.ChangeObject();
+    }
+
+    public void BackChangeBTN()
+    {
+        ChangeModCheck = false;
+        ModCanvas.gameObject.SetActive(true);
+        canvas.gameObject.SetActive(true);
+        changeCanves.gameObject.SetActive(false);
+        managerObject.ChangeObject();
+    }
+
 }
