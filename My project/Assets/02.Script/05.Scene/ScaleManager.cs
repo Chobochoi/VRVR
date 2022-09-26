@@ -16,7 +16,7 @@ public class ScaleManager : MonoBehaviour
 
     public void Start()
     {
-        CatWheel = GameObject.Find("CatWheelforUnity");    
+        //CatWheel = GameObject.Find("CatWheelforUnity");    
     }
 
     void Update()
