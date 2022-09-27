@@ -17,6 +17,7 @@ public class ManagerObject : MonoBehaviour
     public Slider XBar;
     public Slider YBar;
     public Slider ZBar;
+    public Slider speedBar;
 
     public float scale;
 
@@ -24,13 +25,15 @@ public class ManagerObject : MonoBehaviour
     public InputField xInput;
     public InputField yInput;
     public InputField zInput;
+    public InputField speedInput;
 
     public Text targetRotateText;
     float targetRotateX;
     float targetRotateY;
     float targetRotateZ;
+    float targetSpeed;
 
-    public Text targetColorText;
+    public Text targetSpeedText;
 
 
 
@@ -111,21 +114,28 @@ public class ManagerObject : MonoBehaviour
             Ray ray = camera.ScreenPointToRay(Input.mousePosition);
             RaycastHit Hit;
             Debug.DrawRay(ray.origin, ray.direction * 100f, Color.blue, 1f);
-            if(Physics.Raycast(ray, out Hit))
+            if(Physics.Raycast(ray, out Hit) )
             {
-                Target = Hit.collider.gameObject;
-                GameManager.instance.selectedObj = Target;
-                targetNameText.text = Target.name;
+                if (Hit.transform.CompareTag("Object"))
+                {
+                    Target = Hit.collider.gameObject;
+                    GameManager.instance.selectedObj = Target;
+                    targetNameText.text = Target.name;
 
-                targetScaleX = Hit.transform.localScale.x;
-                targetScaleY = Hit.transform.localScale.y;
-                targetScaleZ = Hit.transform.localScale.z;
-                targetSizeText.text = "크   기 : x = " + targetScaleX + ", y = " + targetScaleY + ", z = " + targetScaleZ; 
+                    targetScaleX = Hit.transform.localScale.x;
+                    targetScaleY = Hit.transform.localScale.y;
+                    targetScaleZ = Hit.transform.localScale.z;
+                    targetSizeText.text = "크   기 : x = " + targetScaleX + ", y = " + targetScaleY + ", z = " + targetScaleZ;
 
-                targetRotateX = Hit.transform.eulerAngles.x;
-                targetRotateY = Hit.transform.eulerAngles.y;
-                targetRotateZ = Hit.transform.eulerAngles.z;
-                targetRotateText.text = "회   전 : x = " + targetRotateX + ", y = " + targetRotateY + ", z = " + targetRotateZ; 
+                    targetRotateX = Hit.transform.eulerAngles.x;
+                    targetRotateY = Hit.transform.eulerAngles.y;
+                    targetRotateZ = Hit.transform.eulerAngles.z;
+                    targetRotateText.text = "회   전 : x = " + targetRotateX + ", y = " + targetRotateY + ", z = " + targetRotateZ;
+
+                    ObjectController TargetSpeed = Target.GetComponent<ObjectController>();
+                    targetSpeed = TargetSpeed.speed;
+                    targetSpeedText.text = "속   도 : " + targetSpeed;
+                }
             }
         }
     }
@@ -168,6 +178,17 @@ public class ManagerObject : MonoBehaviour
         targetRotateText.text = "회   전 : x = " + targetRotateX + ", y = " + targetRotateY + ", z = " + targetRotateZ;
     }
 
+    public void ChangeSpeed()
+    {
+        ObjectController TargetSpeed = Target.GetComponent<ObjectController>();
+        targetSpeed = speedBar.value;
+        speedInput.text = targetSpeed.ToString();
+
+        TargetSpeed.speed = targetSpeed;
+        targetSpeedText.text = "속   도 : " + targetSpeed;
+
+    }
+
     public void ScaleInput()
     {
         string a = scaleInput.text;
@@ -192,7 +213,7 @@ public class ManagerObject : MonoBehaviour
     public void YInput()
     {
         string a = yInput.text;
-        targetRotateX = float.Parse(a);
+        targetRotateY = float.Parse(a);
 
         Target.transform.eulerAngles = new Vector3(targetRotateX, targetRotateY, targetRotateZ);
         targetRotateText.text = "회   전 : x = " + targetRotateX + ", y = " + targetRotateY + ", z = " + targetRotateZ;
@@ -201,10 +222,20 @@ public class ManagerObject : MonoBehaviour
     public void ZInput()
     {
         string a = zInput.text;
-        targetRotateX = float.Parse(a);
+        targetRotateZ = float.Parse(a);
 
         Target.transform.eulerAngles = new Vector3(targetRotateX, targetRotateY, targetRotateZ);
         targetRotateText.text = "회   전 : x = " + targetRotateX + ", y = " + targetRotateY + ", z = " + targetRotateZ;
+    }
+
+    public void SpeedInput()
+    {
+        string a = speedInput.text;
+        targetSpeed = float.Parse(a);
+
+        ObjectController TargetSpeed = Target.GetComponent<ObjectController>();
+        TargetSpeed.speed = targetSpeed;
+
     }
 
 }
