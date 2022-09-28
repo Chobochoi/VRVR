@@ -54,6 +54,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Analyzer Include="/Applications/Visual Studio.app/Contents/MonoBundle/Addins/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="/Users/jeonghyeongi/Desktop/VRVR/ManagerProgram/Assets/AWS/AWSSDK/AWSSDK.Core.dll" />
+    <Analyzer Include="/Users/jeonghyeongi/Desktop/VRVR/ManagerProgram/Assets/AWS/AWSSDK/AWSSDK.DynamoDBv2.dll" />
+    <Analyzer Include="/Users/jeonghyeongi/Desktop/VRVR/ManagerProgram/Assets/AWS/AWSSDK/AWSSDK.CognitoSync.dll" />
+    <Analyzer Include="/Users/jeonghyeongi/Desktop/VRVR/ManagerProgram/Assets/AWS/AWSSDK/AWSSDK.CognitoIdentity.dll" />
+    <Analyzer Include="/Users/jeonghyeongi/Desktop/VRVR/ManagerProgram/Assets/AWS/AWSSDK/AWSSDK.SecurityToken.dll" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Library/PackageCache/com.unity.testtools.codecoverage@1.0.1/Editor/CommandLineParser/CommandLineOptionSet.cs" />

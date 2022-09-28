@@ -54,6 +54,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Analyzer Include="/Applications/Visual Studio.app/Contents/MonoBundle/Addins/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="/Users/jeonghyeongi/Desktop/VRVR/ManagerProgram/Assets/AWS/AWSSDK/AWSSDK.Core.dll" />
+    <Analyzer Include="/Users/jeonghyeongi/Desktop/VRVR/ManagerProgram/Assets/AWS/AWSSDK/AWSSDK.DynamoDBv2.dll" />
+    <Analyzer Include="/Users/jeonghyeongi/Desktop/VRVR/ManagerProgram/Assets/AWS/AWSSDK/AWSSDK.CognitoSync.dll" />
+    <Analyzer Include="/Users/jeonghyeongi/Desktop/VRVR/ManagerProgram/Assets/AWS/AWSSDK/AWSSDK.CognitoIdentity.dll" />
+    <Analyzer Include="/Users/jeonghyeongi/Desktop/VRVR/ManagerProgram/Assets/AWS/AWSSDK/AWSSDK.SecurityToken.dll" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/Script/Scene01/ObjectController.cs" />
@@ -63,15 +68,26 @@
     <Compile Include="Assets/Script/Scene02/ManagerObject.cs" />
     <Compile Include="Assets/Script/Scene00/GameManager.cs" />
     <Compile Include="Assets/Script/Scene02/UIController.cs" />
+    <Compile Include="Assets/AWS/Examples/DynamoDBExample.cs" />
+    <Compile Include="Assets/AWS/Examples/DynamoDBBaseExample.cs" />
+    <Compile Include="Assets/AWS/Examples/LowLevelTableExample.cs" />
+    <Compile Include="Assets/AWS/Examples/TableQueryAndScanExample.cs" />
+    <Compile Include="Assets/AWS/Examples/HighLevelTableExample.cs" />
+    <Compile Include="Assets/AWS/Examples/CognitoSyncManagerSample.cs" />
+    <Compile Include="Assets/Script/AWSScript/AWSStartProgram.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Assets/TextMesh Pro/Shaders/TMPro.cginc" />
+    <None Include="Assets/AWS/AWSSDK/AWSSDK.SecurityToken.dll" />
     <None Include="Assets/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets/AWS/Plugins/Android/AndroidManifest.xml" />
     <None Include="Assets/Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" />
     <None Include="Assets/Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc" />
     <None Include="Assets/Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader" />
     <None Include="Assets/Assets/Modeling/DisplayRoom/INFO.txt" />
+    <None Include="Assets/AWS/Plugins/x86_64/sqlite3.dll" />
     <None Include="Assets/Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets/AWS/AWSSDK/AWSSDK.CognitoIdentity.dll" />
     <None Include="Assets/Material/NewSurfaceShader.shader" />
     <None Include="Assets/Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader" />
     <None Include="Assets/Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt" />
@@ -82,12 +98,16 @@
     <None Include="Assets/Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc" />
     <None Include="Assets/Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc" />
     <None Include="Assets/Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt" />
+    <None Include="Assets/AWS/Examples/License.txt" />
+    <None Include="Assets/AWS/AWSSDK/AWSSDK.CognitoSync.dll" />
     <None Include="Assets/Shader/OutLine.shader" />
     <None Include="Assets/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets/AWS/AWSSDK/AWSSDK.DynamoDBv2.dll" />
     <None Include="Assets/Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader" />
     <None Include="Assets/Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader" />
     <None Include="Assets/Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt" />
     <None Include="Assets/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader" />
+    <None Include="Assets/AWS/AWSSDK/AWSSDK.Core.dll" />
     <None Include="Assets/Assets/TextMesh Pro/Shaders/TMP_Sprite.shader" />
   </ItemGroup>
   <ItemGroup>
@@ -342,6 +362,21 @@
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Core">
+      <HintPath>Assets/AWS/AWSSDK/AWSSDK.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.CognitoIdentity">
+      <HintPath>Assets/AWS/AWSSDK/AWSSDK.CognitoIdentity.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.SecurityToken">
+      <HintPath>Assets/AWS/AWSSDK/AWSSDK.SecurityToken.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.CognitoSync">
+      <HintPath>Assets/AWS/AWSSDK/AWSSDK.CognitoSync.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.DynamoDBv2">
+      <HintPath>Assets/AWS/AWSSDK/AWSSDK.DynamoDBv2.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>/Applications/Unity/Hub/Editor/2021.3.4f1/PlaybackEngines/AppleTVSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

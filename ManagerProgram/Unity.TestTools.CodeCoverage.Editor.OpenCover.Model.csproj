@@ -54,6 +54,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Analyzer Include="/Applications/Visual Studio.app/Contents/MonoBundle/Addins/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="/Users/jeonghyeongi/Desktop/VRVR/ManagerProgram/Assets/AWS/AWSSDK/AWSSDK.Core.dll" />
+    <Analyzer Include="/Users/jeonghyeongi/Desktop/VRVR/ManagerProgram/Assets/AWS/AWSSDK/AWSSDK.DynamoDBv2.dll" />
+    <Analyzer Include="/Users/jeonghyeongi/Desktop/VRVR/ManagerProgram/Assets/AWS/AWSSDK/AWSSDK.CognitoSync.dll" />
+    <Analyzer Include="/Users/jeonghyeongi/Desktop/VRVR/ManagerProgram/Assets/AWS/AWSSDK/AWSSDK.CognitoIdentity.dll" />
+    <Analyzer Include="/Users/jeonghyeongi/Desktop/VRVR/ManagerProgram/Assets/AWS/AWSSDK/AWSSDK.SecurityToken.dll" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Library/PackageCache/com.unity.testtools.codecoverage@1.0.1/Editor/CoverageFormats/OpenCover/Model/SkippedEntity.cs" />
@@ -375,6 +380,21 @@
     </Reference>
     <Reference Include="unityplastic">
       <HintPath>Library/PackageCache/com.unity.collab-proxy@1.15.17/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Core">
+      <HintPath>Assets/AWS/AWSSDK/AWSSDK.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.CognitoIdentity">
+      <HintPath>Assets/AWS/AWSSDK/AWSSDK.CognitoIdentity.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.SecurityToken">
+      <HintPath>Assets/AWS/AWSSDK/AWSSDK.SecurityToken.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.CognitoSync">
+      <HintPath>Assets/AWS/AWSSDK/AWSSDK.CognitoSync.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.DynamoDBv2">
+      <HintPath>Assets/AWS/AWSSDK/AWSSDK.DynamoDBv2.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
