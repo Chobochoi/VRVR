@@ -56,30 +56,15 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Magic Light Probes\Editor\DependencyChecker.cs" />
-    <Compile Include="Assets\Magic Light Probes\Editor\MLPEditor.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\OVROverlayCanvas\Editor\OVROverlayCanvasEditor.cs" />
-    <Compile Include="Assets\Magic Light Probes\Editor\MLPLightEditor.cs" />
-    <Compile Include="Assets\Magic Light Probes\Editor\MLPUtilities.cs" />
-    <Compile Include="Assets\Magic Light Probes\Editor\MLPInfoWindow.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Editor\BuildSamples.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Editor\OculusSampleFrameworkUtil.cs" />
-    <Compile Include="Assets\Magic Light Probes\Editor\MLPCombinedMeshEditor.cs" />
-    <Compile Include="Assets\Magic Light Probes\Editor\MLPVolumeEditor.cs" />
-    <Compile Include="Assets\Magic Light Probes\Editor\MLPUpdater.cs" />
-    <Compile Include="Assets\Magic Light Probes\Editor\MLPManager.cs" />
-    <Compile Include="Assets\Magic Light Probes\Editor\MLPPortal.cs" />
-    <Compile Include="Assets\Magic Light Probes\Editor\MLPQuickEditingEditor.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Gradle\Editor\Utils.cs" />
-    <Compile Include="Assets\Magic Light Probes\Editor\MLPCombinedVolumeEditor.cs" />
     <Compile Include="Assets\Samples\OpenXR Plugin\1.4.2\Intercept Feature\Editor\InterceptCreateSessionFeatureEditor.cs" />
     <Compile Include="Assets\Photon\PhotonVoice\Demos\DemoVoicePun\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Editor\BuildAssetPackages.cs" />
-    <Compile Include="Assets\Magic Light Probes\Editor\MLPTooltipManager.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Firebase\Editor\FirebaseEnabler.cs" />
-    <Compile Include="Assets\Magic Light Probes\Editor\GeneralMethods.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Video\Editor\AndroidVideoEditorUtil.cs" />
-    <Compile Include="Assets\Magic Light Probes\Editor\MLSForceNoProbesEditor.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\Editor\TeleportTransitionWarpInspector.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Video\Editor\MediaPlayerImageEditor.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\Editor\ChatEditor.cs" />
@@ -830,10 +815,6 @@
       <Project>{D7C783D3-6B1D-12EC-0BB6-F34981A7A963}</Project>
       <Name>PhotonChat</Name>
     </ProjectReference>
-    <ProjectReference Include="PlayFabSDKEditor.csproj">
-      <Project>{DD908076-CF29-92E8-A596-444BF7E6E5D2}</Project>
-      <Name>PlayFabSDKEditor</Name>
-    </ProjectReference>
     <ProjectReference Include="AssistantCoreSDKEditor.csproj">
       <Project>{AA2A3F54-9C09-2897-EC05-1FA2CEFA6656}</Project>
       <Name>AssistantCoreSDKEditor</Name>
@@ -877,10 +858,6 @@
     <ProjectReference Include="Facebook.WitAI.csproj">
       <Project>{59A81BBB-D913-50BA-B948-A53E8C361B77}</Project>
       <Name>Facebook.WitAI</Name>
-    </ProjectReference>
-    <ProjectReference Include="MLMExtensions.csproj">
-      <Project>{291AF733-747D-473C-3A4B-FCF1B76A6121}</Project>
-      <Name>MLMExtensions</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.csproj">
       <Project>{36D95032-AADB-9996-0AC6-DCC2659D7FD7}</Project>
@@ -954,10 +931,6 @@
       <Project>{6A1A818E-2075-7503-AC3E-AC553B965D20}</Project>
       <Name>Oculus.VR.Scripts.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="PlayFab.csproj">
-      <Project>{3AF55660-CCC9-AAC2-E268-B941A1B5D63D}</Project>
-      <Name>PlayFab</Name>
-    </ProjectReference>
     <ProjectReference Include="Oculus.Spatializer.csproj">
       <Project>{F79355FB-5971-9019-9B0C-E3323E259EEF}</Project>
       <Name>Oculus.Spatializer</Name>
@@ -1029,6 +1002,14 @@
     <ProjectReference Include="VoiceSDK.Runtime.csproj">
       <Project>{BFCB1A71-A1B1-F655-2E3A-49328AF55F29}</Project>
       <Name>VoiceSDK.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="PlayFabSDKEditor.csproj">
+      <Project>{DD908076-CF29-92E8-A596-444BF7E6E5D2}</Project>
+      <Name>PlayFabSDKEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="PlayFab.csproj">
+      <Project>{3AF55660-CCC9-AAC2-E268-B941A1B5D63D}</Project>
+      <Name>PlayFab</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

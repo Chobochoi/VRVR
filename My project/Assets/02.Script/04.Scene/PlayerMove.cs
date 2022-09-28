@@ -10,7 +10,7 @@ public class PlayerMove : MonoBehaviourPun, IPunObservable
     public float rotSpeed = 200.0f;
     public GameObject cameraRig;
     public Transform myCharactor;
-    //public Animator anim;
+    public Animator anim;
     public Text nameText;
 
     Vector3 setPos;
