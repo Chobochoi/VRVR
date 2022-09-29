@@ -54,27 +54,22 @@
   </PropertyGroup>
   <ItemGroup>
     <Analyzer Include="/Applications/Visual Studio.app/Contents/MonoBundle/Addins/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
-    <Analyzer Include="/Users/jeonghyeongi/Desktop/VRVR/ManagerProgram/Assets/AWS/AWSSDK/AWSSDK.Core.dll" />
-    <Analyzer Include="/Users/jeonghyeongi/Desktop/VRVR/ManagerProgram/Assets/AWS/AWSSDK/AWSSDK.DynamoDBv2.dll" />
-    <Analyzer Include="/Users/jeonghyeongi/Desktop/VRVR/ManagerProgram/Assets/AWS/AWSSDK/AWSSDK.CognitoSync.dll" />
-    <Analyzer Include="/Users/jeonghyeongi/Desktop/VRVR/ManagerProgram/Assets/AWS/AWSSDK/AWSSDK.CognitoIdentity.dll" />
-    <Analyzer Include="/Users/jeonghyeongi/Desktop/VRVR/ManagerProgram/Assets/AWS/AWSSDK/AWSSDK.SecurityToken.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets/AWS/Examples/TableQueryAndScanExample.cs" />
     <Compile Include="Assets/Script/Scene01/ObjectController.cs" />
+    <Compile Include="Assets/AWS/Examples/LowLevelTableExample.cs" />
+    <Compile Include="Assets/AWS/Examples/CognitoSyncManagerSample.cs" />
     <Compile Include="Assets/Script/Scene00/mainManager.cs" />
+    <Compile Include="Assets/AWS/Examples/DynamoDBExample.cs" />
+    <Compile Include="Assets/AWS/Examples/DynamoDBBaseExample.cs" />
     <Compile Include="Assets/Script/Scene02/Player.cs" />
     <Compile Include="Assets/Script/Scene01/UICanvasController.cs" />
     <Compile Include="Assets/Script/Scene02/ManagerObject.cs" />
     <Compile Include="Assets/Script/Scene00/GameManager.cs" />
     <Compile Include="Assets/Script/Scene02/UIController.cs" />
-    <Compile Include="Assets/AWS/Examples/DynamoDBExample.cs" />
-    <Compile Include="Assets/AWS/Examples/DynamoDBBaseExample.cs" />
-    <Compile Include="Assets/AWS/Examples/LowLevelTableExample.cs" />
-    <Compile Include="Assets/AWS/Examples/TableQueryAndScanExample.cs" />
     <Compile Include="Assets/AWS/Examples/HighLevelTableExample.cs" />
-    <Compile Include="Assets/AWS/Examples/CognitoSyncManagerSample.cs" />
-    <Compile Include="Assets/Script/AWSScript/AWSStartProgram.cs" />
+    <Compile Include="Assets/Script/AWSScript/AWSave.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Assets/TextMesh Pro/Shaders/TMPro.cginc" />
@@ -354,29 +349,29 @@
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>/Applications/Unity/Hub/Editor/2021.3.4f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-      <HintPath>Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="ReportGeneratorMerged">
-      <HintPath>Library/PackageCache/com.unity.testtools.codecoverage@1.0.1/lib/ReportGenerator/ReportGeneratorMerged.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="AWSSDK.Core">
       <HintPath>Assets/AWS/AWSSDK/AWSSDK.Core.dll</HintPath>
     </Reference>
     <Reference Include="AWSSDK.CognitoIdentity">
       <HintPath>Assets/AWS/AWSSDK/AWSSDK.CognitoIdentity.dll</HintPath>
     </Reference>
-    <Reference Include="AWSSDK.SecurityToken">
-      <HintPath>Assets/AWS/AWSSDK/AWSSDK.SecurityToken.dll</HintPath>
+    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+      <HintPath>Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="AWSSDK.CognitoSync">
       <HintPath>Assets/AWS/AWSSDK/AWSSDK.CognitoSync.dll</HintPath>
     </Reference>
+    <Reference Include="ReportGeneratorMerged">
+      <HintPath>Library/PackageCache/com.unity.testtools.codecoverage@1.0.1/lib/ReportGenerator/ReportGeneratorMerged.dll</HintPath>
+    </Reference>
     <Reference Include="AWSSDK.DynamoDBv2">
       <HintPath>Assets/AWS/AWSSDK/AWSSDK.DynamoDBv2.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.SecurityToken">
+      <HintPath>Assets/AWS/AWSSDK/AWSSDK.SecurityToken.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>/Applications/Unity/Hub/Editor/2021.3.4f1/PlaybackEngines/AppleTVSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

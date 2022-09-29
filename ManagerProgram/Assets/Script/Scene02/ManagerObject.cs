@@ -70,21 +70,32 @@ public class ManagerObject : MonoBehaviour
             {
                 if(Hit.transform.CompareTag("Object") && GameManager.instance.selectObjectNumber == 0)
                 {
+                    ObjectController OC = Hit.transform.GetComponent<ObjectController>();
+                    int deleteObjectNum = OC.value;
+
+                    GameManager.instance.instanceName.RemoveAt(deleteObjectNum - 1);
+
                     Destroy(Hit.transform.gameObject);
                 }
                 
                 else if(Hit.transform.CompareTag("Floor") && GameManager.instance.selectObjectNumber != 0 )
                 {
                     countInstances++;
+
                     string selectObj = GameManager.instance.selectObjectNumber.ToString();
+
                     Vector3 hitpos = Hit.point;
                     hitpos.y = 0.3f;
 
                     GameObject obj = Resources.Load(selectObj) as GameObject;
                     GameObject instance = Instantiate(obj, hitpos, Hit.transform.rotation);
+                     
                     instance.name = "Object" + countInstances;
+                    GameManager.instance.instanceName.Add(instance.name);
 
                     ObjectController OC = instance.GetComponent<ObjectController>();
+
+                    OC.prefabTypeNum = GameManager.instance.selectObjectNumber;
                     OC.value = countInstances;
 
 
@@ -122,6 +133,10 @@ public class ManagerObject : MonoBehaviour
                     GameManager.instance.selectedObj = Target;
                     targetNameText.text = Target.name;
 
+                    GameManager.instance.objectPositionX = Hit.transform.position.x;
+                    GameManager.instance.objectPositionY = Hit.transform.position.y;
+                    GameManager.instance.objectPositionZ = Hit.transform.position.z;
+
                     targetScaleX = Hit.transform.localScale.x;
                     targetScaleY = Hit.transform.localScale.y;
                     targetScaleZ = Hit.transform.localScale.z;
@@ -144,19 +159,22 @@ public class ManagerObject : MonoBehaviour
     {
         scale = scaleBar.value;
         scaleInput.text = scale.ToString();
+        GameManager.instance.objectScale = scale;
+
 
         Target.transform.localScale = new Vector3(scale, scale, scale);
         targetScaleX = Target.transform.localScale.x;
         targetScaleY = Target.transform.localScale.y;
         targetScaleZ = Target.transform.localScale.z;
         targetSizeText.text = "크   기 : x = " + targetScaleX + ", y = " + targetScaleY + ", z = " + targetScaleZ;
-
+        
 
     }
     public void ChangeXRotate()
     { 
         targetRotateX = XBar.value;
         xInput.text = targetRotateX.ToString();
+        GameManager.instance.objectRotateX = targetRotateX;
 
         Target.transform.eulerAngles = new Vector3(targetRotateX, targetRotateY, targetRotateZ);
         targetRotateText.text = "회   전 : x = " + targetRotateX + ", y = " + targetRotateY + ", z = " + targetRotateZ;
@@ -165,6 +183,7 @@ public class ManagerObject : MonoBehaviour
     {
         targetRotateY = YBar.value;
         yInput.text = targetRotateY.ToString();
+        GameManager.instance.objectRotateY = targetRotateY;
 
         Target.transform.eulerAngles = new Vector3(targetRotateX, targetRotateY, targetRotateZ);
         targetRotateText.text = "회   전 : x = " + targetRotateX + ", y = " + targetRotateY + ", z = " + targetRotateZ;
@@ -173,6 +192,7 @@ public class ManagerObject : MonoBehaviour
     {
         targetRotateZ = ZBar.value;
         zInput.text = targetRotateZ.ToString();
+        GameManager.instance.objectRotateZ = targetRotateZ;
 
         Target.transform.eulerAngles = new Vector3(targetRotateX, targetRotateY, targetRotateZ);
         targetRotateText.text = "회   전 : x = " + targetRotateX + ", y = " + targetRotateY + ", z = " + targetRotateZ;
@@ -183,6 +203,7 @@ public class ManagerObject : MonoBehaviour
         ObjectController TargetSpeed = Target.GetComponent<ObjectController>();
         targetSpeed = speedBar.value;
         speedInput.text = targetSpeed.ToString();
+        GameManager.instance.objectRotateSpeed = targetSpeed;
 
         TargetSpeed.speed = targetSpeed;
         targetSpeedText.text = "속   도 : " + targetSpeed;
@@ -193,6 +214,7 @@ public class ManagerObject : MonoBehaviour
     {
         string a = scaleInput.text;
         scale = float.Parse(a);
+        GameManager.instance.objectScale = scale;
 
         Target.transform.localScale = new Vector3(scale, scale, scale);
         targetScaleX = Target.transform.localScale.x;
@@ -205,6 +227,7 @@ public class ManagerObject : MonoBehaviour
     {
         string a = xInput.text;
         targetRotateX = float.Parse(a);
+        GameManager.instance.objectRotateX = targetRotateX;
 
         Target.transform.eulerAngles = new Vector3(targetRotateX, targetRotateY, targetRotateZ);
         targetRotateText.text = "회   전 : x = " + targetRotateX + ", y = " + targetRotateY + ", z = " + targetRotateZ;
@@ -214,6 +237,7 @@ public class ManagerObject : MonoBehaviour
     {
         string a = yInput.text;
         targetRotateY = float.Parse(a);
+        GameManager.instance.objectRotateY = targetRotateY;
 
         Target.transform.eulerAngles = new Vector3(targetRotateX, targetRotateY, targetRotateZ);
         targetRotateText.text = "회   전 : x = " + targetRotateX + ", y = " + targetRotateY + ", z = " + targetRotateZ;
@@ -223,6 +247,7 @@ public class ManagerObject : MonoBehaviour
     {
         string a = zInput.text;
         targetRotateZ = float.Parse(a);
+        GameManager.instance.objectRotateZ = targetRotateZ;
 
         Target.transform.eulerAngles = new Vector3(targetRotateX, targetRotateY, targetRotateZ);
         targetRotateText.text = "회   전 : x = " + targetRotateX + ", y = " + targetRotateY + ", z = " + targetRotateZ;
@@ -232,6 +257,7 @@ public class ManagerObject : MonoBehaviour
     {
         string a = speedInput.text;
         targetSpeed = float.Parse(a);
+        GameManager.instance.objectRotateSpeed = targetSpeed;
 
         ObjectController TargetSpeed = Target.GetComponent<ObjectController>();
         TargetSpeed.speed = targetSpeed;

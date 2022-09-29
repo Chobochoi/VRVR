@@ -7,6 +7,7 @@ public class ObjectController : MonoBehaviour
     public float speed = 30f;
 
     public int value;
+    public int prefabTypeNum;
     Vector3 ObjPos;
 
 

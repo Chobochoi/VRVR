@@ -857,6 +857,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 30
   value: 0
+  prefabTypeNum: 0
 --- !u!1 &52735151
 GameObject:
   m_ObjectHideFlags: 0
@@ -1656,6 +1657,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 30
   value: 0
+  prefabTypeNum: 0
 --- !u!1 &145365610
 GameObject:
   m_ObjectHideFlags: 0
@@ -3339,6 +3341,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 30
   value: 0
+  prefabTypeNum: 0
 --- !u!1 &386306231
 GameObject:
   m_ObjectHideFlags: 0
@@ -5051,6 +5054,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 30
   value: 0
+  prefabTypeNum: 0
 --- !u!1 &605539083
 GameObject:
   m_ObjectHideFlags: 0
@@ -5248,6 +5252,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 30
   value: 0
+  prefabTypeNum: 0
 --- !u!1 &686736844
 GameObject:
   m_ObjectHideFlags: 0
@@ -5912,6 +5917,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 30
   value: 0
+  prefabTypeNum: 0
 --- !u!1 &747287394
 GameObject:
   m_ObjectHideFlags: 0
@@ -6745,6 +6751,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 30
   value: 0
+  prefabTypeNum: 0
 --- !u!1 &857370763
 GameObject:
   m_ObjectHideFlags: 0
@@ -7926,6 +7933,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 30
   value: 0
+  prefabTypeNum: 0
 --- !u!1 &1049193207
 GameObject:
   m_ObjectHideFlags: 0
@@ -8430,6 +8438,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 30
   value: 0
+  prefabTypeNum: 0
 --- !u!1 &1106767245
 GameObject:
   m_ObjectHideFlags: 0
@@ -9172,6 +9181,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 30
   value: 0
+  prefabTypeNum: 0
 --- !u!1 &1243055083
 GameObject:
   m_ObjectHideFlags: 0
@@ -10361,6 +10371,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 30
   value: 0
+  prefabTypeNum: 0
 --- !u!1 &1412623721
 GameObject:
   m_ObjectHideFlags: 0
@@ -11913,6 +11924,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 30
   value: 0
+  prefabTypeNum: 0
 --- !u!1 &1648726342
 GameObject:
   m_ObjectHideFlags: 0
@@ -13238,6 +13250,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 30
   value: 0
+  prefabTypeNum: 0
 --- !u!1 &1966078959
 GameObject:
   m_ObjectHideFlags: 0
@@ -14111,6 +14124,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 30
   value: 0
+  prefabTypeNum: 0
 --- !u!1 &2123062117
 GameObject:
   m_ObjectHideFlags: 0
@@ -14460,6 +14474,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 30
   value: 0
+  prefabTypeNum: 0
 --- !u!1 &2142543875
 GameObject:
   m_ObjectHideFlags: 0
@@ -14657,6 +14672,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 30
   value: 0
+  prefabTypeNum: 0
 --- !u!23 &21839525284893980
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14946,7 +14962,7 @@ GameObject:
   - component: {fileID: 3264736157407802020}
   m_Layer: 0
   m_Name: Walls
-  m_TagString: Object
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14980,7 +14996,7 @@ GameObject:
   - component: {fileID: 6498224990115163600}
   m_Layer: 0
   m_Name: GlassStair
-  m_TagString: Object
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15474,7 +15490,7 @@ GameObject:
   - component: {fileID: 319430316657735624}
   m_Layer: 0
   m_Name: Wall
-  m_TagString: Object
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -15494,7 +15510,7 @@ GameObject:
   - component: {fileID: 8834449977302255416}
   m_Layer: 0
   m_Name: Wall
-  m_TagString: Object
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -15514,7 +15530,7 @@ GameObject:
   - component: {fileID: 7688158563468334924}
   m_Layer: 0
   m_Name: Wall
-  m_TagString: Object
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -15534,7 +15550,7 @@ GameObject:
   - component: {fileID: 5505891218170057571}
   m_Layer: 0
   m_Name: Wall
-  m_TagString: Object
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -15554,7 +15570,7 @@ GameObject:
   - component: {fileID: 1436540678898862289}
   m_Layer: 0
   m_Name: Wall
-  m_TagString: Object
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -15574,7 +15590,7 @@ GameObject:
   - component: {fileID: 672705447407434447}
   m_Layer: 0
   m_Name: Wall
-  m_TagString: Object
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -15594,7 +15610,7 @@ GameObject:
   - component: {fileID: 3720783773760361562}
   m_Layer: 0
   m_Name: Wall
-  m_TagString: Object
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -15766,7 +15782,7 @@ GameObject:
   - component: {fileID: 9079489732569223688}
   m_Layer: 0
   m_Name: Wall
-  m_TagString: Object
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -15832,7 +15848,7 @@ GameObject:
   - component: {fileID: 5388827298946201391}
   m_Layer: 0
   m_Name: Wall Center (3)
-  m_TagString: Object
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -15864,7 +15880,7 @@ GameObject:
   - component: {fileID: 5388827299753420109}
   m_Layer: 0
   m_Name: Wall Center (1)
-  m_TagString: Object
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -15896,7 +15912,7 @@ GameObject:
   - component: {fileID: 5388827299937888809}
   m_Layer: 0
   m_Name: Wall Center
-  m_TagString: Object
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -15944,7 +15960,7 @@ GameObject:
   - component: {fileID: 5388827300018955652}
   m_Layer: 0
   m_Name: Wall Center (4)
-  m_TagString: Object
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -15960,7 +15976,7 @@ GameObject:
   - component: {fileID: 5388827300024911289}
   m_Layer: 0
   m_Name: Wall Center (6)
-  m_TagString: Object
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -15992,7 +16008,7 @@ GameObject:
   - component: {fileID: 5388827300242062259}
   m_Layer: 0
   m_Name: Wall Center (5)
-  m_TagString: Object
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -16040,7 +16056,7 @@ GameObject:
   - component: {fileID: 5388827300519958276}
   m_Layer: 0
   m_Name: Wall Center (7)
-  m_TagString: Object
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -16056,7 +16072,7 @@ GameObject:
   - component: {fileID: 5388827300620303673}
   m_Layer: 0
   m_Name: Wall Center (2)
-  m_TagString: Object
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647

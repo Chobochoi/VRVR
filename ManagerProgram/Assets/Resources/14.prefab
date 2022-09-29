@@ -119,6 +119,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0
   value: 0
+  prefabTypeNum: 14
 --- !u!54 &-1770557013631699350
 Rigidbody:
   m_ObjectHideFlags: 0
