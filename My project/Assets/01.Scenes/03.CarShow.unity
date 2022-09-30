@@ -2472,6 +2472,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Casual1
       objectReference: {fileID: 0}
+    - target: {fileID: 3047547822702353114, guid: 98989ade6e3178a49b8673cf244bb726, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3716699030689025463, guid: 98989ade6e3178a49b8673cf244bb726, type: 3}
       propertyPath: m_InteractionManager
       value: 
@@ -2504,9 +2508,25 @@ PrefabInstance:
       propertyPath: myCharactor
       value: 
       objectReference: {fileID: 1694388104993738523}
+    - target: {fileID: 3716699031400315964, guid: 98989ade6e3178a49b8673cf244bb726, type: 3}
+      propertyPath: m_SynchronizePosition
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3716699031400315964, guid: 98989ade6e3178a49b8673cf244bb726, type: 3}
+      propertyPath: m_SynchronizeRotation
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3716699031400315965, guid: 98989ade6e3178a49b8673cf244bb726, type: 3}
       propertyPath: sceneViewId
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8702827537493694356, guid: 98989ade6e3178a49b8673cf244bb726, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 8702827537493694356, guid: 98989ade6e3178a49b8673cf244bb726, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 1.92
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98989ade6e3178a49b8673cf244bb726, type: 3}
