@@ -77,14 +77,15 @@ public class ManagerObject : MonoBehaviour
                 {
                     countInstances++;
                     string selectObj = GameManager.instance.selectObjectNumber.ToString();
+                    
                     Vector3 hitpos = Hit.point;
                     hitpos.y = 0.3f;
 
                     GameObject obj = Resources.Load(selectObj) as GameObject;
                     GameObject instance = Instantiate(obj, hitpos, Hit.transform.rotation);
-                    instance.name = "Object" + countInstances;
 
                     ObjectController OC = instance.GetComponent<ObjectController>();
+                    OC.prefabTypeNum = GameManager.instance.selectObjectNumber;
                     OC.value = countInstances;
 
 

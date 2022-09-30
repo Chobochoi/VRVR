@@ -67,7 +67,7 @@ public class AWSave : MonoBehaviour
                 Debug.Log("Load and Find Error" + result.Exception);
                 return;
             }
-
+            
             int BefcountNum = result.Result.objectCount;
 
             if (BefcountNum > i)
@@ -107,6 +107,7 @@ public class AWSave : MonoBehaviour
             userID = GameManager.instance.userID,
             storeNum = GameManager.instance.storeNum,
             storeName = GameManager.instance.storeName,
+
             instanceName = GameManager.instance.objectName,
             objectCount = GameManager.instance.objectLength,
 

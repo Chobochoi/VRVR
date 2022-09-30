@@ -37,6 +37,7 @@ public class UIController : MonoBehaviour
 
     public void SaveBTN()
     {
+        GameManager.instance.SaveObject();
     }
 
     public void ResetBTN()
