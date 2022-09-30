@@ -1,14 +1,13 @@
 ﻿<Properties StartupConfiguration="{00FBEE1E-871C-6D16-8E4F-74203294676B}|">
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/AWSScript/AWSave.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/Scene00/GameManager.cs">
     <Files>
-      <File FileName="Assets/Script/Scene02/UIController.cs" Line="66" Column="37" />
-      <File FileName="Assets/Script/Scene02/ManagerObject.cs" Line="138" Column="18" />
-      <File FileName="Assets/Script/Scene01/ObjectController.cs" Line="9" Column="15" />
-      <File FileName="Assets/Script/Scene00/GameManager.cs" Line="28" Column="35" />
-      <File FileName="Assets/Script/Scene00/mainManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/AWSScript/AWSave.cs" Line="110" Column="33" />
+      <File FileName="Assets/Script/Scene02/UIController.cs" Line="40" Column="43" />
+      <File FileName="Assets/Script/Scene02/ManagerObject.cs" Line="88" Column="80" />
+      <File FileName="Assets/Script/Scene01/ObjectController.cs" Line="8" Column="30" />
+      <File FileName="Assets/Script/Scene00/GameManager.cs" Line="66" Column="58" />
+      <File FileName="Assets/Script/AWSScript/AWSave.cs" Line="70" Column="13" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

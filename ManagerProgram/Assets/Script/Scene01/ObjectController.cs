@@ -5,7 +5,7 @@ using UnityEngine;
 public class ObjectController : MonoBehaviour
 {
     public float speed = 30f;
-
+    public int prefabTypeNum;
     public int value;
     Vector3 ObjPos;
 
