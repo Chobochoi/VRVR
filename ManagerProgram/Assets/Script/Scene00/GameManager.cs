@@ -45,7 +45,7 @@ public class GameManager : MonoBehaviour
     public int storeNum;
 
     //Scene2 변수
-    public int objectCount;
+    public int objectLength;
     public string objectName;
   
     public int prefabTypeNum;
@@ -69,15 +69,18 @@ public class GameManager : MonoBehaviour
     public void SaveOBJ()
     {
         GameObject[] obj = GameObject.FindGameObjectsWithTag("Object");
-        objectCount = obj.Length;
+        objectLength = obj.Length;
+
+        AWSave save = GetComponent<AWSave>();
+        save.FindCountNum(objectLength);
+
         for (int i = 0; i < obj.Length; i++)
         {
-            //obj[i] = GetComponent<GameObject>();
+            
             ObjectController objbase = obj[i].GetComponent<ObjectController>();
             
-            objectName = obj[i].name;
+            objectName = "Object"+i;
             prefabTypeNum = objbase.prefabTypeNum;
-            value = objbase.value;
 
             objectPositionX = obj[i].transform.position.x;
             objectPositionY = obj[i].transform.position.y;
@@ -88,8 +91,6 @@ public class GameManager : MonoBehaviour
             objectScale = obj[i].transform.localScale.x;
             objectRotateSpeed = objbase.speed;
 
-            Debug.Log(obj.Length);
-            AWSave save = GetComponent<AWSave>();
             save.SaveObject(i);
         }
     }

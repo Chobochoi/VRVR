@@ -70,11 +70,6 @@ public class ManagerObject : MonoBehaviour
             {
                 if(Hit.transform.CompareTag("Object") && GameManager.instance.selectObjectNumber == 0)
                 {
-                    ObjectController OC = Hit.transform.GetComponent<ObjectController>();
-                    int deleteObjectNum = OC.value;
-
-                    GameManager.instance.instanceName.RemoveAt(deleteObjectNum - 1);
-
                     Destroy(Hit.transform.gameObject);
                 }
                 
@@ -89,10 +84,6 @@ public class ManagerObject : MonoBehaviour
 
                     GameObject obj = Resources.Load(selectObj) as GameObject;
                     GameObject instance = Instantiate(obj, hitpos, Hit.transform.rotation);
-                     
-                    instance.name = "Object" + countInstances;
-                    GameManager.instance.instanceName.Add(instance.name);
-
                     ObjectController OC = instance.GetComponent<ObjectController>();
 
                     OC.prefabTypeNum = GameManager.instance.selectObjectNumber;

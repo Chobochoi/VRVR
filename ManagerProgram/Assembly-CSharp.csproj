@@ -60,6 +60,7 @@
     <Compile Include="Assets/Script/Scene01/ObjectController.cs" />
     <Compile Include="Assets/AWS/Examples/LowLevelTableExample.cs" />
     <Compile Include="Assets/AWS/Examples/CognitoSyncManagerSample.cs" />
+    <Compile Include="Assets/Script/AWSScript/AWSave.cs" />
     <Compile Include="Assets/Script/Scene00/mainManager.cs" />
     <Compile Include="Assets/AWS/Examples/DynamoDBExample.cs" />
     <Compile Include="Assets/AWS/Examples/DynamoDBBaseExample.cs" />
@@ -69,7 +70,6 @@
     <Compile Include="Assets/Script/Scene00/GameManager.cs" />
     <Compile Include="Assets/Script/Scene02/UIController.cs" />
     <Compile Include="Assets/AWS/Examples/HighLevelTableExample.cs" />
-    <Compile Include="Assets/Script/AWSScript/AWSave.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Assets/TextMesh Pro/Shaders/TMPro.cginc" />

@@ -57,6 +57,8 @@ public class UIController : MonoBehaviour
     public void BackBTN()
     {
         menuCanvas.gameObject.SetActive(false);
+        canvas.gameObject.SetActive(true);
+        UIONOFF = false;
     }
     public void OpenMenuUI()
     {

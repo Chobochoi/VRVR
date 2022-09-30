@@ -12,6 +12,7 @@ public class AWSave : MonoBehaviour
     AmazonDynamoDBClient DBClient;
     DynamoDBContext DBContext;
 
+
     private void Awake()
     {
         UnityInitializer.AttachToGameObject(this.gameObject);
@@ -22,11 +23,12 @@ public class AWSave : MonoBehaviour
         DBContext = new DynamoDBContext(DBClient);
     }
 
+
     [DynamoDBTable("SmartStoreDB")]
     public class Object
     {
         [DynamoDBHashKey]
-        public string userID { get; set; }
+        public string instanceName { get; set; }
         [DynamoDBProperty]
         public int storeNum { get; set; }
         [DynamoDBProperty]
@@ -34,9 +36,8 @@ public class AWSave : MonoBehaviour
         [DynamoDBProperty]
         public int objectCount { get; set; }
         [DynamoDBProperty]
-        public string instanceName { get; set; }
-        [DynamoDBProperty]
-        public int countNum { get; set; }
+        public string userID { get; set; }
+
         [DynamoDBProperty]
         public int prefabTypeNum { get; set; }
         [DynamoDBProperty]
@@ -57,16 +58,58 @@ public class AWSave : MonoBehaviour
         public float objectRotateSpeed { get; set; }
     }
 
+    public void FindCountNum(int i)
+    {
+        DBContext.LoadAsync<Object>("Object0", (AmazonDynamoDBResult<Object> result) =>
+        {
+            if (result.Exception != null)
+            {
+                Debug.Log("Load and Find Error" + result.Exception);
+                return;
+            }
+
+            int BefcountNum = result.Result.objectCount;
+
+            if (BefcountNum > i)
+            {
+                for (int a = i; a < BefcountNum; a++)
+                {
+                    DeleteItem(a);
+                }
+            }
+
+        },null);
+    }
+
+    public void DeleteItem(int a)
+    {
+        string deleteobject = "Object" + a;
+        DBContext.DeleteAsync<Object>(deleteobject, (res) =>
+        {
+            if(res.Exception == null)
+            {
+                DBContext.LoadAsync<Object>(deleteobject, (result) =>
+                {
+                    Object deleteObjcet = result.Result;
+                    if (deleteObjcet == null)
+                    {
+                        Debug.Log(deleteobject + " success!!!");
+                    }
+                });
+            }
+        });
+    }
+
     public void SaveObject(int a)
     {
-        Object object1 = new Object
+        Object storeobject = new Object
         {
             userID = GameManager.instance.userID,
             storeNum = GameManager.instance.storeNum,
             storeName = GameManager.instance.storeName,
             instanceName = GameManager.instance.objectName,
-            objectCount = GameManager.instance.objectCount,
-            countNum = GameManager.instance.value,
+            objectCount = GameManager.instance.objectLength,
+
             prefabTypeNum = GameManager.instance.prefabTypeNum,
             objectScale = GameManager.instance.objectScale,
             objectPositionX = GameManager.instance.objectPositionX,
@@ -78,8 +121,7 @@ public class AWSave : MonoBehaviour
             objectRotateSpeed = GameManager.instance.objectRotateSpeed,
         };
 
-
-        DBContext.SaveAsync(object1, (result) =>
+        DBContext.SaveAsync(storeobject, (result) =>
         {
             if (result.Exception == null)
             {
