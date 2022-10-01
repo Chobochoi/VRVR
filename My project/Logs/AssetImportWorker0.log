@@ -1,29 +1,29 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.37f1 (8c66806a0c04) revision 9201280'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19044) 64bit Professional' Language: 'ko' Physical Memory: 16322 MB
+OS: 'Windows 11  (10.0.22000) 64bit Professional' Language: 'ko' Physical Memory: 32653 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2020.3.37f1\Editor\Unity.exe
+C:\Program Files\Unity 2020.3.37f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/1302/Desktop/VRVR/My project
+C:/Users/zmxn5/OneDrive/Desktop/GitProject/VRVR/My project
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-5627
-Successfully changed project path to: C:/Users/1302/Desktop/VRVR/My project
-C:/Users/1302/Desktop/VRVR/My project
+51405
+Successfully changed project path to: C:/Users/zmxn5/OneDrive/Desktop/GitProject/VRVR/My project
+C:/Users/zmxn5/OneDrive/Desktop/GitProject/VRVR/My project
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 146.03 ms, found 17 plugins.
-Preloading 1 native plugins for Editor in 0.58 ms.
+Refreshing native plugins compatible for Editor in 115.67 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.59 ms.
 Initialize engine version: 2020.3.37f1 (8c66806a0c04)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.37f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/1302/Desktop/VRVR/My project/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity 2020.3.37f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/zmxn5/OneDrive/Desktop/GitProject/VRVR/My project/Assets
 [Subsystems] No descriptors matched for  examples in Assets/MeshingFeaturePlugin/UnitySubsystemsManifest.json.
 [Subsystems] No descriptors matched for  inputs in Assets/MeshingFeaturePlugin/UnitySubsystemsManifest.json.
 [Subsystems] No descriptors matched for  displays in Assets/MeshingFeaturePlugin/UnitySubsystemsManifest.json.
@@ -31,89 +31,89 @@ Initialize engine version: 2020.3.37f1 (8c66806a0c04)
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1660 (ID=0x2184)
+    Renderer: NVIDIA GeForce RTX 3080 (ID=0x2216)
     Vendor:   
-    VRAM:     5991 MB
-    Driver:   27.21.14.5751
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+    VRAM:     10078 MB
+    Driver:   31.0.15.1640
 Shader 'Custom/NewSurfaceShader': fallback shader 'Legacy Shaders/Transparent/Vertexlit' not found
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.37f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.37f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56676
+Mono path[0] = 'C:/Program Files/Unity 2020.3.37f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity 2020.3.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity 2020.3.37f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56896
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001718 seconds.
+Register platform support module: C:/Program Files/Unity 2020.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001234 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 111.65 ms, found 17 plugins.
-Preloading 1 native plugins for Editor in 0.06 ms.
+Refreshing native plugins compatible for Editor in 89.75 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.610 seconds
+- Completed reload, in  0.468 seconds
 Domain Reload Profiling:
-	ReloadAssembly (610ms)
-		BeginReloadAssembly (61ms)
+	ReloadAssembly (468ms)
+		BeginReloadAssembly (45ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (486ms)
-			LoadAssemblies (59ms)
+		EndReloadAssembly (374ms)
+			LoadAssemblies (43ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (133ms)
+			SetupTypeCache (100ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (26ms)
-			SetupLoadedEditorAssemblies (225ms)
+			RebuildScriptCaches (22ms)
+			SetupLoadedEditorAssemblies (183ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (112ms)
-				BeforeProcessingInitializeOnLoad (12ms)
-				ProcessInitializeOnLoadAttributes (71ms)
-				ProcessInitializeOnLoadMethodAttributes (25ms)
+				RefreshPlugins (90ms)
+				BeforeProcessingInitializeOnLoad (9ms)
+				ProcessInitializeOnLoadAttributes (60ms)
+				ProcessInitializeOnLoadMethodAttributes (20ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.014704 seconds.
+Registered in 0.010546 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 118.00 ms, found 17 plugins.
-Preloading 1 native plugins for Editor in 0.08 ms.
+Refreshing native plugins compatible for Editor in 82.57 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
 [XR] OculusXRPlugin: registering subsystems
 [XR] Unable to register display lifecyle provider: [1]
 [XR] Oculus Input lifecycle provider registered.
 [XR] Unable to register input lifecyle provider: [1]
 [XR] OVRP version 1.74.0
 Mono: successfully reloaded assembly
-- Completed reload, in  1.712 seconds
+- Completed reload, in  1.304 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1713ms)
-		BeginReloadAssembly (145ms)
+	ReloadAssembly (1304ms)
+		BeginReloadAssembly (98ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (17ms)
-		EndReloadAssembly (1510ms)
-			LoadAssemblies (129ms)
+			CreateAndSetChildDomain (15ms)
+		EndReloadAssembly (1165ms)
+			LoadAssemblies (88ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (367ms)
+			SetupTypeCache (252ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (79ms)
-			SetupLoadedEditorAssemblies (823ms)
+			RebuildScriptCaches (67ms)
+			SetupLoadedEditorAssemblies (681ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (118ms)
-				BeforeProcessingInitializeOnLoad (129ms)
-				ProcessInitializeOnLoadAttributes (506ms)
-				ProcessInitializeOnLoadMethodAttributes (60ms)
-				AfterProcessingInitializeOnLoad (6ms)
+				RefreshPlugins (83ms)
+				BeforeProcessingInitializeOnLoad (105ms)
+				ProcessInitializeOnLoadAttributes (434ms)
+				ProcessInitializeOnLoadMethodAttributes (53ms)
+				AfterProcessingInitializeOnLoad (4ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (1ms)
@@ -122,15 +122,15 @@ Platform modules already initialized, skipping
 Worker process is ready to serve import requests
 Shader 'Custom/NewSurfaceShader': fallback shader 'Legacy Shaders/Transparent/Vertexlit' not found
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 1.82 ms, found 17 plugins.
-Preloading 1 native plugins for Editor in 0.07 ms.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 2.66 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
 Unloading 5252 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 224.7 MB.
-System memory in use after: 225.1 MB.
+System memory in use before: 208.0 MB.
+System memory in use after: 208.5 MB.
 
-Unloading 126 unused Assets to reduce memory usage. Loaded Objects now: 5638.
-Total: 7.196600 ms (FindLiveObjects: 0.402300 ms CreateObjectMapping: 0.425200 ms MarkObjects: 6.135800 ms  DeleteObjects: 0.217700 ms)
+Unloading 126 unused Assets to reduce memory usage. Loaded Objects now: 5600.
+Total: 5.618100 ms (FindLiveObjects: 0.383400 ms CreateObjectMapping: 0.144200 ms MarkObjects: 4.992000 ms  DeleteObjects: 0.097800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -142,4 +142,51 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/New Terrain 4.asset
+  artifactKey: Guid(1fa65d1074f2ba644a714c530e64b311) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain 4.asset using Guid(1fa65d1074f2ba644a714c530e64b311) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84f3e55e000d549aa3474afd8b70128d') in 0.058892 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000117 seconds.
+  path: Assets/New Terrain 1.asset
+  artifactKey: Guid(38a9c42336219f94c9315091935a8425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain 1.asset using Guid(38a9c42336219f94c9315091935a8425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3232bbdc142ca1a06d636eeedb2d5597') in 0.021012 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000138 seconds.
+  path: Assets/UniversalRenderPipelineGlobalSettings.asset
+  artifactKey: Guid(5f8af571e3eb94f48bcc7a7c34580e49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniversalRenderPipelineGlobalSettings.asset using Guid(5f8af571e3eb94f48bcc7a7c34580e49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e616ed34ec0308de95fb15f676def404') in 0.005141 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000127 seconds.
+  path: Assets/New Terrain 5.asset
+  artifactKey: Guid(ef7f1b12fa70fc041bcd7bd63f51e9eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain 5.asset using Guid(ef7f1b12fa70fc041bcd7bd63f51e9eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '637f1e0cce4d206ae3bdc85a36e30a70') in 0.014369 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000134 seconds.
+  path: Assets/TerrainData_df9dda81-fc4c-4e30-b532-a2bdc6696ef2.asset
+  artifactKey: Guid(2b8a630aa9c27cc4e80415b008e64464) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainData_df9dda81-fc4c-4e30-b532-a2bdc6696ef2.asset using Guid(2b8a630aa9c27cc4e80415b008e64464) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c33c2d1beaf0ad26caca4d01e9886dc4') in 0.014799 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000102 seconds.
+  path: Assets/New Terrain.asset
+  artifactKey: Guid(0b5b93060753efd429e457e4f6e4ed6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain.asset using Guid(0b5b93060753efd429e457e4f6e4ed6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4718690d76a3b6d6a5406d7f1e4ae028') in 0.007675 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000105 seconds.
+  path: Assets/New Terrain 3.asset
+  artifactKey: Guid(b992a2643a4e972418548d994f4d0778) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain 3.asset using Guid(b992a2643a4e972418548d994f4d0778) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd613e17331c06f8ca8a8d997edaa8c6b') in 0.014141 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000106 seconds.
+  path: Assets/New Terrain 2.asset
+  artifactKey: Guid(e0344978e276ceb4ebc59a156afe11ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain 2.asset using Guid(e0344978e276ceb4ebc59a156afe11ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cb46f87ca0ed7ce0a7eee50d2a1e741') in 0.007942 seconds 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
