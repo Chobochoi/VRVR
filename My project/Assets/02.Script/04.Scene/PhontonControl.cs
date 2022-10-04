@@ -11,7 +11,7 @@ public class PhontonControl : MonoBehaviourPunCallbacks
     {
         if (photonView.IsMine)
         {
-            Camera.main.gameObject.SetActive(false);
+            Camera.main.gameObject.SetActive(true);
         }
         else
         {
