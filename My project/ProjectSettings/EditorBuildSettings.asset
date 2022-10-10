@@ -12,14 +12,14 @@ EditorBuildSettings:
     path: Assets/01.Scenes/02.Server.unity
     guid: 1bcaa299a5493f84f94ead0ab1ec9359
   - enabled: 1
-    path: Assets/01.Scenes/03.WatchShow.unity
-    guid: e022e7067ac1c3546b085512e4aebe3e
-  - enabled: 1
     path: Assets/01.Scenes/03.CarShow.unity
     guid: 67f3fce0d1d8b9247b65db5a5dcab876
   - enabled: 1
+    path: Assets/01.Scenes/03.WatchShow.unity
+    guid: fc6fa05817e94fa4b82cdd6295d541b3
+  - enabled: 1
     path: Assets/01.Scenes/03.FurnShow.unity
-    guid: 71d0a5f3fc7fcec4bb1105a327730e3f
+    guid: 15e4d4ee369141348b77d44f40e1d466
   - enabled: 1
     path: Assets/01.Scenes/04.Detail.unity
     guid: 9194389d09ad69541ba8de809fd47339
