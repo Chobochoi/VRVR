@@ -1,4 +1,4 @@
-using UnityEngine;
+/*using UnityEngine;
 using Amazon;
 using Amazon.CognitoIdentity;
 using Amazon.DynamoDBv2;
@@ -136,3 +136,4 @@ public class AWSave : MonoBehaviour
     }
 
 }
+*/

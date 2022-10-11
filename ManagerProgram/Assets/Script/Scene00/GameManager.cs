@@ -1,6 +1,8 @@
- using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using PlayFab;
+using PlayFab.ClientModels;
 
 public class GameManager : MonoBehaviour
 {
@@ -19,12 +21,13 @@ public class GameManager : MonoBehaviour
         
         DontDestroyOnLoad(gameObject);
     }
- 
+
     public bool storeNameSecondChange = false;
     public int selectObjectNumber = -1;
     public GameObject selectedObj;
 
     public string userID;
+    public string passWord;
     public string storeName;
     public int storeNum;
 
@@ -41,11 +44,85 @@ public class GameManager : MonoBehaviour
     public float objectRotateZ;
     public float objectRotateSpeed;
 
-    public void SaveObject()
+
+    public class DataContent
+    {
+        public int objectLength;
+        public string userID;
+
+        public string storeName;
+        public int storeNum;
+
+        public string objectName;
+
+        public int prefabTypeNum;
+        public float objectScale;
+        public float objectPositionX;
+        public float objectPositionY;
+        public float objectPositionZ;
+        public float objectRotateX;
+        public float objectRotateY;
+        public float objectRotateZ;
+        public float objectRotateSpeed;
+    }
+
+    public void SaveJsonToPlayfab()
+    {
+        GameObject[] obj = GameObject.FindGameObjectsWithTag("Object");
+
+        GameManager.instance.objectLength = obj.Length;
+        Debug.Log(obj.Length);
+        DataContent content = new DataContent();
+        for (int i = 0; i < obj.Length; i++)
+        {
+            ObjectController OC = obj[i].GetComponent<ObjectController>();
+
+            content.objectLength = GameManager.instance.objectLength;
+            content.userID = GameManager.instance.userID;
+            content.storeName = GameManager.instance.storeName;
+            content.storeNum = GameManager.instance.storeNum;
+            content.objectName = "Object" + i;
+
+            content.prefabTypeNum = OC.prefabTypeNum;
+            content.objectScale = obj[i].transform.localScale.x;
+            content.objectPositionX = obj[i].transform.position.x;
+            content.objectPositionY = obj[i].transform.position.y;
+            content.objectPositionZ = obj[i].transform.position.z;
+            content.objectRotateX = obj[i].transform.localEulerAngles.x;
+            content.objectRotateY = obj[i].transform.localEulerAngles.y;
+            content.objectRotateZ = obj[i].transform.localEulerAngles.z;
+            content.objectRotateSpeed = OC.speed;
+
+            Dictionary<string, string> dataDic = new Dictionary<string, string>();
+            dataDic.Add(content.objectName, JsonUtility.ToJson(content));
+
+            GameManager.instance.SetUserData(dataDic);
+        }
+
+    }
+
+
+
+    public void SetUserData(Dictionary<string, string> data)
+    {
+        var request = new UpdateUserDataRequest() { Data = data, Permission = UserDataPermission.Public };
+
+        PlayFabClientAPI.UpdateUserData(request, (result) =>
+        {
+            Debug.Log("Update Player Data!");
+
+        }, Debug.Log);
+        
+
+    }
+
+
+
+   /* public void SaveObject()
     {
         GameObject[] obj = GameObject.FindGameObjectsWithTag("Object");
         
-        AWSave save = GetComponent<AWSave>();
+        //AWSave save = GetComponent<AWSave>();
 
         objectLength = obj.Length;
         save.FindCountNum(objectLength);
@@ -67,6 +144,7 @@ public class GameManager : MonoBehaviour
             objectRotateSpeed = OC.speed;
             save.SaveObject(i);
         }
-    }
-
+    }*/
 }
+
+

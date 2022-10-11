@@ -37,7 +37,8 @@ public class UIController : MonoBehaviour
 
     public void SaveBTN()
     {
-        GameManager.instance.SaveObject();
+
+        GameManager.instance.SaveJsonToPlayfab();
     }
 
     public void ResetBTN()
