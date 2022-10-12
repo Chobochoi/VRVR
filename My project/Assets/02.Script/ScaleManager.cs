@@ -4,8 +4,7 @@ using UnityEngine.InputSystem;
 public class ScaleManager : MonoBehaviour
 {
     float rayDistance = 30f;
-    public GameObject Watch;
-    public GameObject Car;
+    public GameObject Product;
     bool OnAnim = false;
     public Animator anim;   
     public InputActionReference rightHandSelect;
@@ -17,8 +16,7 @@ public class ScaleManager : MonoBehaviour
 
     public void Start()
     {
-        Watch = GameObject.Find("Watch");    
-        Car = GameObject.Find("Car");    
+        Product = GameObject.Find("Product");            
     }
 
     void Update()

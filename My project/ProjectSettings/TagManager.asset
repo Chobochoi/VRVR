@@ -25,6 +25,7 @@ TagManager:
   - Button2
   - Button3
   - Button4
+  - Product
   layers:
   - Default
   - TransparentFX

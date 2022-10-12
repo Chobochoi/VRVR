@@ -313,6 +313,7 @@
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\PassthroughStyler.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\SpatialAnchor\Scripts\AnchorUIManager.cs" />
     <Compile Include="Assets\FrostweepGames\GCSpeechRecognition\Scripts\Core\Managers\SpeechRecognitionManager.cs" />
+    <Compile Include="Assets\02.Script\PlayfabLoad.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_fuku.shader" />
