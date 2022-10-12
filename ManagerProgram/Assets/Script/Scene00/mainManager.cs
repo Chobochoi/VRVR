@@ -15,6 +15,7 @@ public class mainManager : MonoBehaviour
     private void OnLoginSuccess(LoginResult result)
     {
         Debug.Log("Congratulations, you made your first successful API call!");
+        GameManager.instance.playfabId = result.PlayFabId;
         SceneManager.LoadScene(1);
     }
 

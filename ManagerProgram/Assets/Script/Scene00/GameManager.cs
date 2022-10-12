@@ -21,6 +21,9 @@ public class GameManager : MonoBehaviour
         
         DontDestroyOnLoad(gameObject);
     }
+    public string playfabId;
+
+
 
     public bool storeNameSecondChange = false;
     public int selectObjectNumber = -1;
@@ -66,12 +69,41 @@ public class GameManager : MonoBehaviour
         public float objectRotateSpeed;
     }
 
+
+
+
+    public void ResetUserData()
+    {
+        var request = new GetUserDataRequest() { PlayFabId = playfabId};
+
+        PlayFabClientAPI.GetUserData(request, (result) =>
+        {
+            GameObject[] obj = GameObject.FindGameObjectsWithTag("Object");
+            GameManager.instance.objectLength = obj.Length;
+
+            List<string> deleteKeys = new List<string>();
+            if(result.Data.Count > obj.Length)
+            {
+                for(int i = obj.Length; i<result.Data.Count; i++)
+                {
+                    deleteKeys.Add("Object" + i);
+                }
+                DeleteUserData(deleteKeys);
+            }
+            SaveJsonToPlayfab();
+        },Debug.Log);
+
+    }
+
+
+
+
     public void SaveJsonToPlayfab()
     {
         GameObject[] obj = GameObject.FindGameObjectsWithTag("Object");
 
         GameManager.instance.objectLength = obj.Length;
-        Debug.Log(obj.Length);
+
         DataContent content = new DataContent();
         for (int i = 0; i < obj.Length; i++)
         {
@@ -96,7 +128,7 @@ public class GameManager : MonoBehaviour
             Dictionary<string, string> dataDic = new Dictionary<string, string>();
             dataDic.Add(content.objectName, JsonUtility.ToJson(content));
 
-            GameManager.instance.SetUserData(dataDic);
+            SetUserData(dataDic);
         }
 
     }
@@ -116,7 +148,15 @@ public class GameManager : MonoBehaviour
 
     }
 
+    public void DeleteUserData(List<string> deleteKeys)
+    {
+        var request = new UpdateUserDataRequest() { KeysToRemove = deleteKeys };
 
+        PlayFabClientAPI.UpdateUserData(request, (result) =>
+        {
+            Debug.Log("Success Delete Data");
+        }, Debug.Log);
+    }
 
    /* public void SaveObject()
     {

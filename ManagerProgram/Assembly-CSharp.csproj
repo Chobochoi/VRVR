@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/Script/Scene01/ObjectController.cs" />
+    <Compile Include="Assets/Script/PlayFabScript/PlayFabSave.cs" />
     <Compile Include="Assets/Script/AWSScript/AWSave.cs" />
     <Compile Include="Assets/Script/Scene00/mainManager.cs" />
     <Compile Include="Assets/Script/Scene02/Player.cs" />
@@ -64,7 +65,6 @@
     <Compile Include="Assets/Script/Scene02/ManagerObject.cs" />
     <Compile Include="Assets/Script/Scene00/GameManager.cs" />
     <Compile Include="Assets/Script/Scene02/UIController.cs" />
-    <Compile Include="Assets/Script/PlayFabScript/PlayFabSave.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Assets/TextMesh Pro/Shaders/TMPro.cginc" />
@@ -732,9 +732,17 @@
       <Project>{17E8B156-ED75-93A5-EC73-54F394E3B251}</Project>
       <Name>Unity.VisualScripting.Flow.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="PlayFabSDKEditor.csproj">
+      <Project>{EEBF5537-7EEA-E0B2-E3B6-BBE503D52B5F}</Project>
+      <Name>PlayFabSDKEditor</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.VSCode.Editor.csproj">
       <Project>{12960464-D6FB-A1CA-41F7-A432B8366163}</Project>
       <Name>Unity.VSCode.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="PlayFabEditorExtensions.csproj">
+      <Project>{B425CE3E-E945-F3AA-1AD2-1F8BEEE41061}</Project>
+      <Name>PlayFabEditorExtensions</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
       <Project>{DAC7E547-40FD-2D8E-F7C0-25A0252A7DF5}</Project>
@@ -771,6 +779,10 @@
     <ProjectReference Include="Unity.VisualScripting.State.Editor.csproj">
       <Project>{08CE77CE-5AFF-8483-1988-BB132CAE07B6}</Project>
       <Name>Unity.VisualScripting.State.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="PlayFab.csproj">
+      <Project>{24C382B0-5CBE-6237-31CA-12E4CD188908}</Project>
+      <Name>PlayFab</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.SettingsProvider.Editor.csproj">
       <Project>{A69F48DF-1ECE-F32F-E560-7E43BFC46BD8}</Project>
@@ -843,18 +855,6 @@
     <ProjectReference Include="Unity.SysrootPackage.Editor.csproj">
       <Project>{4C541E64-7F4A-25DB-551E-924360FAEF8F}</Project>
       <Name>Unity.SysrootPackage.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="PlayFabEditorExtensions.csproj">
-      <Project>{B425CE3E-E945-F3AA-1AD2-1F8BEEE41061}</Project>
-      <Name>PlayFabEditorExtensions</Name>
-    </ProjectReference>
-    <ProjectReference Include="PlayFabSDKEditor.csproj">
-      <Project>{EEBF5537-7EEA-E0B2-E3B6-BBE503D52B5F}</Project>
-      <Name>PlayFabSDKEditor</Name>
-    </ProjectReference>
-    <ProjectReference Include="PlayFab.csproj">
-      <Project>{24C382B0-5CBE-6237-31CA-12E4CD188908}</Project>
-      <Name>PlayFab</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

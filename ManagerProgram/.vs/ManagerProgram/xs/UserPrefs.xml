@@ -1,18 +1,10 @@
 ﻿<Properties StartupConfiguration="{00FBEE1E-871C-6D16-8E4F-74203294676B}|">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="0d946d01-ac4e-4d33-87e3-b6f0a15ff97d" />
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/Scene00/GameManager.cs">
     <Files>
-      <File FileName="Assets/Script/Scene02/UIController.cs" Line="40" Column="1" />
-      <File FileName="Assets/Script/Scene00/GameManager.cs" Line="69" Column="34" />
-      <File FileName="Assets/Script/Scene00/mainManager.cs" Line="18" Column="35" />
-      <File FileName="Assets/Script/AWSScript/AWSave.cs" Line="37" Column="31" />
-      <File FileName="Assets/Script/PlayFabScript/PlayFabSave.cs" Line="10" Column="2" />
+      <File FileName="Assets/Script/Scene02/UIController.cs" Line="41" Column="43" />
+      <File FileName="Assets/Script/Scene00/GameManager.cs" Line="154" Column="1" />
+      <File FileName="Assets/Script/Scene00/mainManager.cs" Line="15" Column="52" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -30,4 +22,10 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="64028a38-ebd9-4df6-bf9a-0bee81477543" />
+  <MultiItemStartupConfigurations />
 </Properties>
