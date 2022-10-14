@@ -20,9 +20,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/01.Scenes/03.FurnShow.unity
     guid: 15e4d4ee369141348b77d44f40e1d466
-  - enabled: 1
-    path: Assets/01.Scenes/04.Detail.unity
-    guid: 9194389d09ad69541ba8de809fd47339
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 83eb9a81d754de6499dd377103215300, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 6e462629b2cb2ba44a66f616325db100, type: 2}
