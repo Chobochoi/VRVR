@@ -39,13 +39,13 @@ public class ServerManager : MonoBehaviourPunCallbacks
         switch (Data.count)
         {
             case 0:
-                room.text = "Watch Shop";
+                room.text = "시계 판매점";
                 break;
             case 1:
-                room.text = "Furn Shop";
+                room.text = "오락실 뽑기방";
                 break;
             case 2:
-                room.text = "Car Shop";
+                room.text = "자동차 전시관";
                 break;
         }
         Room1.interactable = true;
