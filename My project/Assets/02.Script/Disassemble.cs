@@ -1,7 +1,5 @@
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
-
 
 public class Disassemble : MonoBehaviour
 {
@@ -11,6 +9,7 @@ public class Disassemble : MonoBehaviour
     List<Vector3> childPoslist;
     [SerializeField]
     float offset;
+<<<<<<< HEAD
     public InputActionReference rightHandSelect;
     public GameObject Product;
     float rayDistance = 30.0f;    
@@ -26,9 +25,28 @@ public class Disassemble : MonoBehaviour
     {
         Product = GameObject.Find("Watch");
 
+=======
+    //[Range(0.05f, 0.1f)] '바'로 조절 (어트리뷰트)
+
+   
+
+    void Start()
+    {
+
+        foreach (Transform item in transform)
+        {
+            childlist.Add(item);
+
+            foreach (Transform obj in item)
+            {
+                childlist.Add(obj);
+            }
+        }
+
+>>>>>>> parent of 83e44b23 (Oct24)
         for (int i = 0; i < childlist.Count; i++)
         {
-            childPoslist.Add(childlist[i].transform.position + new Vector3(0, 0, -offset * i));
+            childPoslist.Add(childlist[i].transform.position + new Vector3(-offset * i, 0, 0));
         }
     }
 
@@ -38,6 +56,7 @@ public class Disassemble : MonoBehaviour
         //Disassam();        
     }
 
+<<<<<<< HEAD
     //public void Disassam()
     //{
     //    foreach (Transform item in transform)
@@ -68,5 +87,17 @@ public class Disassemble : MonoBehaviour
     public void OnRightHandSelect(InputAction.CallbackContext context)
     {
         RayClick();
+=======
+    }
+
+    void Update()
+    {
+        for (int i = 0; i < childlist.Count; i++)
+        {
+            childlist[i].position = Vector3.MoveTowards(childlist[i].position, childPoslist[i], Time.deltaTime * 5);
+        }
+
+        //Vector3.MoveTowards()
+>>>>>>> parent of 83e44b23 (Oct24)
     }
 }
