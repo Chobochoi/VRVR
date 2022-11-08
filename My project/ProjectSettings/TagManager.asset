@@ -26,6 +26,7 @@ TagManager:
   - Button3
   - Button4
   - Product
+  - Watch
   layers:
   - Default
   - TransparentFX
