@@ -20,6 +20,10 @@ public class SpeechManager : MonoBehaviour
 
     GCSpeechRecognition speechRec;
 
+    public AudioSource audioSource;
+
+    public string text;
+
     void Start()
     {
 
@@ -40,6 +44,9 @@ public class SpeechManager : MonoBehaviour
         }
 
         languageDrop.value = languageDrop.options.IndexOf(languageDrop.options.Find(x => x.text == Enumerators.LanguageCode.ko_KR.Parse()));
+
+        audioSource = gameObject.GetComponent<AudioSource>();
+
     }
 
     // Update is called once per frame
@@ -109,8 +116,10 @@ public class SpeechManager : MonoBehaviour
         JObject ret = JObject.Parse(text);
         Debug.Log(ret["message"]["result"]["translatedText"].ToString());
 
-        //Debug.Log(text);
+        //jObj = ret["message"]["result"]["translatedText"].ToString();
 
+        //Debug.Log(text);
+        StartCoroutine(DownloadTheAudio(ret["message"]["result"]["translatedText"].ToString()));
     }
 
     private void OnFinishedRecordEvent(AudioClip clip, float[] raw)
@@ -132,5 +141,15 @@ public class SpeechManager : MonoBehaviour
         };
 
         speechRec.Recognize(recognitionRequest);
+    }
+
+    IEnumerator DownloadTheAudio(string temp)
+    {
+        string url = $"https://translate.google.com/translate_tts?ie=UTF-8&total=1&idx=0&textlen=32&client=tw-ob&q={temp}&tl=En-gb";
+        WWW www = new WWW(url);
+        yield return www;
+
+        audioSource.clip = www.GetAudioClip(false, true, AudioType.MPEG);
+        audioSource.Play();
     }
 }
