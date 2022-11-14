@@ -13,9 +13,9 @@ public class GachaManager : MonoBehaviour
     [SerializeField] Animation anim;
     [SerializeField] CanvasGroup cg;
     [SerializeField] ParticleSystem part;
-    
-   string[] gift =
-   {
+
+    string[] gift =
+    {
         "토끼",
         "고양이",
         "강아지",
@@ -52,20 +52,26 @@ public class GachaManager : MonoBehaviour
         "물개",
         "펭귄",
         "황제펭귄"
-   };  
-   
+   };
+
 
     void Start()
     {
         ran = new System.Random();
         light.SetActive(false);
         cg.alpha = 0;
+
     }
 
 
     void Update()
     {
-        
+
+    }
+
+    public void GachaClick()
+    {
+        StartCoroutine(Timer());
     }
 
     public void Luck()
@@ -80,8 +86,23 @@ public class GachaManager : MonoBehaviour
             cg.alpha = Mathf.Lerp(0f, 1.0f, time);
         }
 
+        //light.SetActive(true);
+        //anim.Play();
+        //part.Play();        
+    }
+
+    private IEnumerator Timer()
+    {
         light.SetActive(true);
         anim.Play();
-        part.Play();        
+        part.Play();
+
+        yield return new WaitForSeconds(2.5f);
+
+        Luck();
+
+        yield return new WaitForSeconds(3.0f);
+
+        text.text = "";
     }
 }
