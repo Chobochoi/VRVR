@@ -54,11 +54,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
-    <Analyzer Include="C:\Users\1302\Desktop\VRVR\My project\Assets\06.ETC\Photon\PhotonLibs\Metro\Photon3Unity3D.dll" />
-    <Analyzer Include="C:\Users\1302\Desktop\VRVR\My project\Assets\06.ETC\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.dll" />
-    <Analyzer Include="C:\Users\1302\Desktop\VRVR\My project\Assets\06.ETC\Photon\PhotonVoice\PhotonVoiceLibs\WSA\Photon.Voice.UWP.winmd" />
-    <Analyzer Include="C:\Users\1302\Desktop\VRVR\My project\Assets\06.ETC\Photon\PhotonLibs\Photon3Unity3D.dll" />
-    <Analyzer Include="C:\Users\1302\Desktop\VRVR\My project\Assets\06.ETC\Photon\PhotonLibs\WebSocket\websocket-sharp.dll" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\06.ETC\Oculus\SampleFramework\Usage\OVROverlayCanvas\Editor\OVROverlayCanvasEditor.cs" />
@@ -79,7 +74,6 @@
     <Compile Include="Assets\06.ETC\Samples\OpenXR Plugin\1.4.2\Intercept Feature\Editor\InterceptCreateSessionFeatureEditor.cs" />
     <Compile Include="Assets\FrostweepGames\GCSpeechRecognition\Scripts\Editor\WelcomeDialog.cs" />
     <Compile Include="Assets\06.ETC\Oculus\SampleFramework\Core\Firebase\Editor\FirebaseEnabler.cs" />
-    <Compile Include="Assets\unity-chan!\Unity-chan! Model\Editor\CreateLocatorHere.cs" />
     <Compile Include="Assets\06.ETC\Oculus\SampleFramework\Core\Locomotion\Scripts\Editor\TeleportTransitionWarpInspector.cs" />
     <Compile Include="Assets\06.ETC\Oculus\SampleFramework\Core\Video\Editor\MediaPlayerImageEditor.cs" />
     <Compile Include="Assets\06.ETC\Photon\PhotonChat\Demos\DemoChat\Editor\ChatEditor.cs" />

@@ -54,11 +54,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
-    <Analyzer Include="C:\Users\1302\Desktop\VRVR\My project\Assets\06.ETC\Photon\PhotonLibs\Metro\Photon3Unity3D.dll" />
-    <Analyzer Include="C:\Users\1302\Desktop\VRVR\My project\Assets\06.ETC\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.dll" />
-    <Analyzer Include="C:\Users\1302\Desktop\VRVR\My project\Assets\06.ETC\Photon\PhotonVoice\PhotonVoiceLibs\WSA\Photon.Voice.UWP.winmd" />
-    <Analyzer Include="C:\Users\1302\Desktop\VRVR\My project\Assets\06.ETC\Photon\PhotonLibs\Photon3Unity3D.dll" />
-    <Analyzer Include="C:\Users\1302\Desktop\VRVR\My project\Assets\06.ETC\Photon\PhotonLibs\WebSocket\websocket-sharp.dll" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\06.ETC\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportAimHandlerParabolic.cs" />
@@ -87,7 +82,6 @@
     <Compile Include="Assets\06.ETC\Oculus\SampleFramework\Usage\Passthrough\Scripts\AugmentedObject.cs" />
     <Compile Include="Assets\06.ETC\Photon\PhotonVoice\Demos\DemoVoicePun\Scripts\CharacterInstantiation.cs" />
     <Compile Include="Assets\06.ETC\Oculus\SampleFramework\Core\HandsInteraction\Scripts\InteractableRegistry.cs" />
-    <Compile Include="Assets\unity-chan!\Unity-chan! Model\Scripts\SpringManager.cs" />
     <Compile Include="Assets\06.ETC\Oculus\SampleFramework\Usage\SceneManager\Scripts\PassthroughPlayInEditor.cs" />
     <Compile Include="Assets\FrostweepGames\GCSpeechRecognition\Scripts\Core\Converters\Converters\AudioClip2ByteConverter.cs" />
     <Compile Include="Assets\06.ETC\Photon\PhotonVoice\Demos\DemoVoicePun\Standard Assets\CrossPlatformInput\Scripts\Joystick.cs" />
@@ -139,7 +133,6 @@
     <Compile Include="Assets\uWindowCapture\Samples\Window List\UwcWindowListItem.cs" />
     <Compile Include="Assets\uWindowCapture\Samples\Desktop Layout\UwcDesktopLayouter.cs" />
     <Compile Include="Assets\06.ETC\Oculus\SampleFramework\Usage\AppDeeplink\UI\CustomDebugUI.cs" />
-    <Compile Include="Assets\unity-chan!\Unity-chan! Model\Scripts\SpringBone.cs" />
     <Compile Include="Assets\06.ETC\NetCheckout\Scripts\Misc\Utility.cs" />
     <Compile Include="Assets\06.ETC\NetCheckout\Scripts\Checkout.cs" />
     <Compile Include="Assets\uWindowCapture\Samples\GetPixels\UwcGetPixelsExample.cs" />
@@ -173,7 +166,6 @@
     <Compile Include="Assets\06.ETC\Oculus\SampleFramework\Usage\Passthrough\Scripts\SceneSampler.cs" />
     <Compile Include="Assets\06.ETC\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportTargetHandlerNode.cs" />
     <Compile Include="Assets\02.Script\Information.cs" />
-    <Compile Include="Assets\unity-chan!\Unity-chan! Model\Scripts\IKCtrlRightHand.cs" />
     <Compile Include="Assets\06.ETC\NetCheckout\PlayMaker\Scripts\Actions\DeactivateSubscription.cs" />
     <Compile Include="Assets\06.ETC\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\TrainLocomotive.cs" />
     <Compile Include="Assets\06.ETC\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportOrientationHandlerThumbstick.cs" />
@@ -183,7 +175,6 @@
     <Compile Include="Assets\02.Script\OnOffManager.cs" />
     <Compile Include="Assets\06.ETC\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportTransitionBlink.cs" />
     <Compile Include="Assets\06.ETC\NetCheckout\PlayMaker\Scripts\Actions\GetSubscriptionInfo.cs" />
-    <Compile Include="Assets\unity-chan!\Unity-chan! Model\Scripts\UnityChanControlScriptWithRgidBody.cs" />
     <Compile Include="Assets\02.Script\LobbyCount.cs" />
     <Compile Include="Assets\FrostweepGames\_Generic\Networking\NetworkConstants.cs" />
     <Compile Include="Assets\02.Script\TeleportManager.cs" />
@@ -223,7 +214,6 @@
     <Compile Include="Assets\06.ETC\Scripts\UnityPurchasing\generated\AppleStoreKitTestTangle.cs" />
     <Compile Include="Assets\06.ETC\Photon\PhotonVoice\Demos\DemoVoicePun\Standard Assets\CrossPlatformInput\Scripts\VirtualInput.cs" />
     <Compile Include="Assets\06.ETC\Samples\OpenXR Plugin\1.4.2\Intercept Feature\InterceptMessageHandler.cs" />
-    <Compile Include="Assets\unity-chan!\Unity-chan! Model\Scripts\SpringCollider.cs" />
     <Compile Include="Assets\06.ETC\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\CowController.cs" />
     <Compile Include="Assets\06.ETC\Oculus\SampleFramework\Usage\SceneManager\Scripts\VolumeAndPlaneSwitcher.cs" />
     <Compile Include="Assets\06.ETC\Oculus\SampleFramework\Core\CustomHands\Scripts\HandPose.cs" />
@@ -255,7 +245,6 @@
     <Compile Include="Assets\06.ETC\Oculus\SampleFramework\Usage\SceneManager\Scripts\SimpleResizer\SimpleResizable.cs" />
     <Compile Include="Assets\02.Script\MBTICount.cs" />
     <Compile Include="Assets\uWindowCapture\Samples\Window List\UwcWindowList.cs" />
-    <Compile Include="Assets\unity-chan!\Unity-chan! Model\Scripts\ThirdPersonCamera.cs" />
     <Compile Include="Assets\06.ETC\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportTransitionWarp.cs" />
     <Compile Include="Assets\06.ETC\Photon\PhotonVoice\Demos\DemoVoiceUI\Scripts\PhotonDemoExtensions.cs" />
     <Compile Include="Assets\06.ETC\Oculus\SampleFramework\Core\Video\Scripts\VectorUtil.cs" />
@@ -274,10 +263,8 @@
     <Compile Include="Assets\02.Script\MyManager.cs" />
     <Compile Include="Assets\06.ETC\NetCheckout\Scripts\Misc\AndroidHelper.cs" />
     <Compile Include="Assets\06.ETC\Oculus\SampleFramework\Usage\SpatialAnchor\Scripts\SpatialAnchorLoader.cs" />
-    <Compile Include="Assets\unity-chan!\Unity-chan! Model\Scripts\FaceUpdate.cs" />
     <Compile Include="Assets\FrostweepGames\GCTextToSpeech\Scripts\Core\Settings\Configs\GeneralConfig.cs" />
     <Compile Include="Assets\06.ETC\Oculus\SampleFramework\Core\HandsInteraction\Scripts\Interactable.cs" />
-    <Compile Include="Assets\unity-chan!\Unity-chan! Model\SplashScreen\Scripts\SplashScreen.cs" />
     <Compile Include="Assets\06.ETC\Oculus\SampleFramework\Core\TouchControllers\TouchController.cs" />
     <Compile Include="Assets\06.ETC\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\TrainCar.cs" />
     <Compile Include="Assets\FrostweepGames\GCSpeechRecognition\Scripts\Core\Interfaces\IMediaManager.cs" />
@@ -298,7 +285,6 @@
     <Compile Include="Assets\Tomerinio\LEDLightBlocks\Example Scene\Standard Assets\Utility\FPSCounter.cs" />
     <Compile Include="Assets\Tomerinio\LEDLightBlocks\Example Scene\Standard Assets\Utility\SimpleActivatorMenu.cs" />
     <Compile Include="Assets\06.ETC\Photon\PhotonVoice\Demos\DemoVoicePun\Scripts\VoiceDemoUI.cs" />
-    <Compile Include="Assets\unity-chan!\Unity-chan! Model\Scripts\CameraController.cs" />
     <Compile Include="Assets\06.ETC\Oculus\SampleFramework\Usage\Passthrough\Scripts\PassthroughBrush.cs" />
     <Compile Include="Assets\06.ETC\Photon\PhotonLibs\WebSocket\WebSocket.cs" />
     <Compile Include="Assets\FrostweepGames\GCSpeechRecognition\Scripts\Core\Settings\Configs\GeneralConfig.cs" />
@@ -335,7 +321,6 @@
     <Compile Include="Assets\06.ETC\Oculus\SampleFramework\Core\HandsInteraction\Scripts\BoneCapsuleTriggerLogic.cs" />
     <Compile Include="Assets\06.ETC\Oculus\SampleFramework\Core\DistanceGrab\Scripts\ColorGrabbable.cs" />
     <Compile Include="Assets\06.ETC\Oculus\SampleFramework\Core\Video\Scripts\MediaPlayerImage.cs" />
-    <Compile Include="Assets\unity-chan!\Unity-chan! Model\Scripts\RandomWind.cs" />
     <Compile Include="Assets\Tomerinio\LEDLightBlocks\Example Scene\Standard Assets\Utility\TimedObjectDestructor.cs" />
     <Compile Include="Assets\FrostweepGames\GCSpeechRecognition\Scripts\Core\Managers\VoiceDetectionManager.cs" />
     <Compile Include="Assets\FrostweepGames\GCTextToSpeech\Scripts\Core\Settings\Constants.cs" />
@@ -345,9 +330,7 @@
     <Compile Include="Assets\06.ETC\Photon\PhotonVoice\Demos\DemoVoiceUI\Scripts\UiExtensions.cs" />
     <Compile Include="Assets\02.Script\Keyboard\ColorDataStore.cs" />
     <Compile Include="Assets\06.ETC\NetCheckout\PlayMaker\Scripts\Actions\SetOrderWindow.cs" />
-    <Compile Include="Assets\unity-chan!\Unity-chan! Model\Scripts\IdleChanger.cs" />
     <Compile Include="Assets\06.ETC\Oculus\SampleFramework\Usage\StartScene\Scripts\StartMenu.cs" />
-    <Compile Include="Assets\unity-chan!\Unity-chan! Model\Scripts\AutoBlink.cs" />
     <Compile Include="Assets\FrostweepGames\GCTextToSpeech\Scripts\Core\Managers\TextToSpeechManager.cs" />
     <Compile Include="Assets\06.ETC\Oculus\SampleFramework\Usage\SceneManager\Scripts\FurnitureSpawner.cs" />
     <Compile Include="Assets\FrostweepGames\GCTextToSpeech\Scripts\Core\Settings\Enumerators.cs" />
@@ -403,7 +386,6 @@
     <Compile Include="Assets\06.ETC\NetCheckout\PlayMaker\Scripts\Actions\SetClientSecret.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_fuku.shader" />
     <None Include="Assets\06.ETC\Oculus\SampleFramework\Usage\HandsTrainExample\Shaders\XingLightShader.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\06.ETC\Oculus\SampleFramework\Usage\SceneManager\Shaders\Hidden.shader" />
@@ -418,7 +400,6 @@
     <None Include="Assets\06.ETC\Oculus\SampleFramework\Usage\Passthrough\Materials\SelectivePassthrough.shader" />
     <None Include="Assets\06.ETC\Oculus\SampleFramework\Usage\Passthrough\Materials\SelectivePassthroughSoft.shader" />
     <None Include="Assets\06.ETC\Oculus\SampleFramework\Usage\SceneManager\Shaders\OverwriteAlpha.shader" />
-    <None Include="Assets\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_akarami_blend.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\06.ETC\Oculus\SampleFramework\Usage\DistanceGrab\Materials\CrosshairZCheat.shader" />
     <None Include="Assets\06.ETC\Photon\PhotonVoice\PhotonVoiceLibs\WSA\x86\opus_egpv.dll" />
@@ -426,13 +407,11 @@
     <None Include="Assets\06.ETC\Oculus\SampleFramework\Usage\HandsTrainExample\Shaders\GradientSkybox.shader" />
     <None Include="Assets\06.ETC\Photon\PhotonVoice\PhotonVoiceLibs\x86\AudioIn.dll" />
     <None Include="Assets\06.ETC\Oculus\SampleFramework\Usage\Passthrough\Materials\PassthroughLine.shader" />
-    <None Include="Assets\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_hair_ds.shader" />
     <None Include="Assets\06.ETC\Oculus\SampleFramework\Usage\Passthrough\Materials\BackgroundColor.shader" />
     <None Include="Assets\06.ETC\Photon\PhotonVoice\changes-voice.txt" />
     <None Include="Assets\06.ETC\Oculus\SampleFramework\Usage\Passthrough\Materials\FatFingers.shader" />
     <None Include="Assets\FrostweepGames\LICENSE_INFO.txt" />
     <None Include="Assets\06.ETC\Photon\PhotonVoice\Demos\DemoVoicePun\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
-    <None Include="Assets\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_hada.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\06.ETC\NetCheckout\Demos\_Start\_Readme.txt" />
@@ -450,12 +429,9 @@
     <None Include="Assets\06.ETC\Photon\PhotonVoice\Demos\DemoVoicePun\Audio\Pop-J_Fairba-8421_hifi.mp3.txt" />
     <None Include="Assets\06.ETC\Photon\PhotonVoice\Demos\DemoVoicePun\Fonts\Orbitron Black.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets\AnimeGirls\BaseCharacter\BaseCharacter\Sourcefiles\Shader\DoubleSided.shader" />
     <None Include="Assets\JsonDotNet\link.xml" />
     <None Include="Assets\FrostweepGames\GCTextToSpeech\README.txt" />
     <None Include="Assets\uWindowCapture\Assets\Shaders\UwcUnlit.shader" />
-    <None Include="Assets\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_fuku_ds.shader" />
-    <None Include="Assets\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_eyelash_blend.shader" />
     <None Include="Assets\JsonDotNet\Assemblies\Standalone\Newtonsoft.Json.XML" />
     <None Include="Assets\06.ETC\Photon\PhotonVoice\PhotonVoiceLibs\x86_64\opus_egpv.dll" />
     <None Include="Assets\03.Material\Material\NewSurfaceShader.shader" />
@@ -482,22 +458,18 @@
     <None Include="Assets\06.ETC\Photon\PhotonUnityNetworking\readme.txt" />
     <None Include="Assets\06.ETC\Photon\PhotonChat\Demos\DemoChat\Files\eurof_tt.txt" />
     <None Include="Assets\06.ETC\Samples\OpenXR Plugin\1.4.2\Intercept Feature\InterceptFeaturePlugin\windows\x64\InterceptFeaturePlugin.dll" />
-    <None Include="Assets\unity-chan!\Unity-chan! Model\Audio\Voice\unity-chan_voice_list.txt" />
     <None Include="Assets\06.ETC\Samples\OpenXR Plugin\1.4.2\Intercept Feature\InterceptFeaturePlugin\universalwindows\x64\InterceptFeaturePlugin.dll" />
     <None Include="Assets\06.ETC\Photon\PhotonVoice\PhotonVoiceLibs\WSA\x64\webrtc-audio.dll" />
     <None Include="Assets\06.ETC\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.dll" />
-    <None Include="Assets\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_hada_blend.shader" />
     <None Include="Assets\06.ETC\Photon\PhotonVoice\Demos\DemoVoicePun\Audio\Reminder-public_d-291_hifi.mp3.txt" />
     <None Include="Assets\06.ETC\Oculus\SampleFramework\Core\HandsInteraction\Shaders\OculusSampleAlphaHandOutline.shader" />
     <None Include="Assets\06.ETC\Photon\PhotonVoice\PhotonVoiceLibs\WSA\ARM\Photon.Voice.UWP.MediaExtensions.dll" />
     <None Include="Assets\06.ETC\Photon\PhotonLibs\Photon3Unity3D.dll" />
     <None Include="Assets\06.ETC\Photon\PhotonVoice\PhotonVoiceLibs\WSA\x64\Photon.Voice.UWP.MediaExtensions.dll" />
-    <None Include="Assets\AnimeGirls\BaseCharacter\BaseCharacter\Sourcefiles\Shader\UnlitColor.shader" />
     <None Include="Assets\UI pack\Documentation.txt" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\06.ETC\Photon\PhotonLibs\Metro\Photon3Unity3D.dll" />
     <None Include="Assets\uWindowCapture\Assets\Shaders\UwcCommon.cginc" />
-    <None Include="Assets\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_eye.shader" />
     <None Include="Assets\06.ETC\Oculus\SampleFramework\Usage\Passthrough\Materials\GlowEffect.shader" />
     <None Include="Assets\Tomerinio\LEDLightBlocks\Example Scene\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
@@ -514,7 +486,7 @@
     <None Include="Assets\06.ETC\MeshingFeaturePlugin\universalwindows\x64\MeshingFeaturePlugin.dll" />
     <None Include="Assets\FrostweepGames\_Generic\3rdParty\JsonDotNet\license.txt" />
     <None Include="Assets\06.ETC\Photon\PhotonLibs\Photon3Unity3D.xml" />
-    <None Include="Assets\unity-chan!\Unity-chan! Model\Art\Stage\Shader\AlphaMask.shader" />
+    <None Include="Assets\SkySeries Freebie\Hdri setup.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\06.ETC\Oculus\SampleFramework\Core\Video\Plugins\Android\Audio360\ThirdPartyNotices.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
@@ -525,14 +497,12 @@
     <None Include="Assets\06.ETC\Oculus\SampleFramework\Usage\SceneManager\Shaders\StylizedOcclusions.shader" />
     <None Include="Assets\06.ETC\Photon\PhotonUnityNetworking\link.xml" />
     <None Include="Assets\06.ETC\Photon\PhotonVoice\PhotonVoiceLibs\x86_64\AudioIn.dll" />
-    <None Include="Assets\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_hair.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\06.ETC\Oculus\SampleFramework\Core\CustomHands\Shaders\Hands_02.shader" />
     <None Include="Assets\06.ETC\Oculus\SampleFramework\Usage\SceneManager\Shaders\GlassMask.shader" />
     <None Include="Assets\06.ETC\Oculus\SampleFramework\Core\CustomHands\Materials\Hands_DiffBump.shader" />
     <None Include="Assets\06.ETC\Photon\PhotonVoice\PhotonVoiceLibs\WSA\x64\opus_egpv.dll" />
     <None Include="Assets\06.ETC\Photon\PhotonVoice\PhotonVoiceLibs\WSA\x86\Photon.Voice.UWP.MediaExtensions.dll" />
-    <None Include="Assets\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_eye_blend.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\06.ETC\MeshingFeaturePlugin\windows\x64\MeshingFeaturePlugin.dll" />
     <None Include="Assets\06.ETC\Photon\PhotonVoice\PhotonVoiceLibs\WebRTC-LICENSE.txt" />
