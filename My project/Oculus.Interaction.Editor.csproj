@@ -54,53 +54,58 @@
   </PropertyGroup>
   <ItemGroup>
     <Analyzer Include="/Applications/Visual Studio.app/Contents/MonoBundle/Addins/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="/Users/jeonghyeongi/Desktop/Git/VRVR/My project/Assets/06.ETC/Photon/PhotonLibs/Metro/Photon3Unity3D.dll" />
+    <Analyzer Include="/Users/jeonghyeongi/Desktop/Git/VRVR/My project/Assets/06.ETC/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.dll" />
+    <Analyzer Include="/Users/jeonghyeongi/Desktop/Git/VRVR/My project/Assets/06.ETC/Photon/PhotonVoice/PhotonVoiceLibs/WSA/Photon.Voice.UWP.winmd" />
+    <Analyzer Include="/Users/jeonghyeongi/Desktop/Git/VRVR/My project/Assets/06.ETC/Photon/PhotonLibs/Photon3Unity3D.dll" />
+    <Analyzer Include="/Users/jeonghyeongi/Desktop/Git/VRVR/My project/Assets/06.ETC/Photon/PhotonLibs/WebSocket/websocket-sharp.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets/Oculus/Interaction/Editor/Selection/Controllers/ControllerOffsetEditor.cs" />
-    <Compile Include="Assets/Oculus/Interaction/Editor/Poke/CylinderProximityFieldEditor.cs" />
-    <Compile Include="Assets/Oculus/Interaction/Editor/EditorBase.cs" />
-    <Compile Include="Assets/Oculus/Interaction/Editor/Utils/HandGrabPoseWizard.cs" />
-    <Compile Include="Assets/Oculus/Interaction/Editor/Utils/OptionalDrawer.cs" />
-    <Compile Include="Assets/Oculus/Interaction/Editor/OVRIntegration/InputDataProviderUpdateTriggerOVREditor.cs" />
-    <Compile Include="Assets/Oculus/Interaction/Editor/PoseDetection/FeatureStateThresholdsEditor.cs" />
-    <Compile Include="Assets/Oculus/Interaction/Editor/Grab/GrabbingRuleEditor.cs" />
-    <Compile Include="Assets/Oculus/Interaction/Editor/Grab/HandGrab/HandGhostProviderUtils.cs" />
-    <Compile Include="Assets/Oculus/Interaction/Editor/Poke/BoxProximityFieldEditor.cs" />
-    <Compile Include="Assets/Oculus/Interaction/Editor/PoseDetection/FingerFeatureStateThresholdsEditor.cs" />
-    <Compile Include="Assets/Oculus/Interaction/Editor/Selection/Hands/HandWristOffsetEditor.cs" />
-    <Compile Include="Assets/Oculus/Interaction/Editor/Poke/CircleProximityFieldEditor.cs" />
-    <Compile Include="Assets/Oculus/Interaction/Editor/Grab/SnapSurfaces/CylinderEditor.cs" />
-    <Compile Include="Assets/Oculus/Interaction/Editor/Utils/EditorConstants.cs" />
-    <Compile Include="Assets/Oculus/Interaction/Editor/UnityCanvas/CanvasCylinderEditor.cs" />
-    <Compile Include="Assets/Oculus/Interaction/Editor/PackageUtils/AssetListWindow.cs" />
-    <Compile Include="Assets/Oculus/Interaction/Editor/Utils/HandAnimatorWizard.cs" />
-    <Compile Include="Assets/Oculus/Interaction/Editor/Grab/Visuals/HandPuppetEditor.cs" />
-    <Compile Include="Assets/Oculus/Interaction/Editor/PoseDetection/JointVelocityFeatureConfigEditor.cs" />
-    <Compile Include="Assets/Oculus/Interaction/Editor/PoseDetection/TransformConfigEditor.cs" />
-    <Compile Include="Assets/Oculus/Interaction/Editor/PoseDetection/TransformFeatureStateThresholdsEditor.cs" />
-    <Compile Include="Assets/Oculus/Interaction/Editor/Utils/PluginUpdater.cs" />
-    <Compile Include="Assets/Oculus/Interaction/Editor/PoseDetection/JointRotationFeatureConfigEditor.cs" />
-    <Compile Include="Assets/Oculus/Interaction/Editor/Grab/HandGrab/HandGrabPoseEditor.cs" />
-    <Compile Include="Assets/Oculus/Interaction/Editor/Utils/ConditionalHideDrawer.cs" />
-    <Compile Include="Assets/Oculus/Interaction/Editor/Grab/SnapSurfaces/BezierSurfaceEditor.cs" />
-    <Compile Include="Assets/Oculus/Interaction/Editor/Hands/HandVisualEditor.cs" />
-    <Compile Include="Assets/Oculus/Interaction/Editor/Grab/HandGrab/HandGrabInteractableEditor.cs" />
-    <Compile Include="Assets/Oculus/Interaction/Editor/Selection/Hands/ConicalFrustumEditor.cs" />
-    <Compile Include="Assets/Oculus/Interaction/Editor/Grab/SnapSurfaces/BoxEditor.cs" />
-    <Compile Include="Assets/Oculus/Interaction/Editor/PackageUtils/PackageCleanup.cs" />
-    <Compile Include="Assets/Oculus/Interaction/Editor/UnityCanvas/CanvasRenderTextureEditor.cs" />
-    <Compile Include="Assets/Oculus/Interaction/Editor/PoseDetection/FingerFeatureListPropertyDrawer.cs" />
-    <Compile Include="Assets/Oculus/Interaction/Editor/Grab/HandGrab/HandPoseEditor.cs" />
-    <Compile Include="Assets/Oculus/Interaction/Editor/Poke/PokeInteractableEditor.cs" />
-    <Compile Include="Assets/Oculus/Interaction/Editor/Grab/HandGrab/HandWristOffsetUndoWizard.cs" />
-    <Compile Include="Assets/Oculus/Interaction/Editor/Surfaces/PointablePlaneEditor.cs" />
-    <Compile Include="Assets/Oculus/Interaction/Editor/OVRIntegration/FromHandPrefabDataSourceEditor.cs" />
-    <Compile Include="Assets/Oculus/Interaction/Editor/PoseDetection/FeatureListPropertyDrawer.cs" />
-    <Compile Include="Assets/Oculus/Interaction/Editor/Surfaces/PointableCylinderEditor.cs" />
-    <Compile Include="Assets/Oculus/Interaction/Editor/Grab/SnapSurfaces/SphereEditor.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Interaction/Editor/Selection/Controllers/ControllerOffsetEditor.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Interaction/Editor/Poke/CylinderProximityFieldEditor.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Interaction/Editor/EditorBase.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Interaction/Editor/Utils/HandGrabPoseWizard.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Interaction/Editor/Utils/OptionalDrawer.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Interaction/Editor/OVRIntegration/InputDataProviderUpdateTriggerOVREditor.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Interaction/Editor/PoseDetection/FeatureStateThresholdsEditor.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Interaction/Editor/Grab/GrabbingRuleEditor.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Interaction/Editor/Grab/HandGrab/HandGhostProviderUtils.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Interaction/Editor/Poke/BoxProximityFieldEditor.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Interaction/Editor/PoseDetection/FingerFeatureStateThresholdsEditor.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Interaction/Editor/Selection/Hands/HandWristOffsetEditor.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Interaction/Editor/Poke/CircleProximityFieldEditor.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Interaction/Editor/Grab/SnapSurfaces/CylinderEditor.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Interaction/Editor/Utils/EditorConstants.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Interaction/Editor/UnityCanvas/CanvasCylinderEditor.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Interaction/Editor/PackageUtils/AssetListWindow.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Interaction/Editor/Utils/HandAnimatorWizard.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Interaction/Editor/Grab/Visuals/HandPuppetEditor.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Interaction/Editor/PoseDetection/JointVelocityFeatureConfigEditor.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Interaction/Editor/PoseDetection/TransformConfigEditor.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Interaction/Editor/PoseDetection/TransformFeatureStateThresholdsEditor.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Interaction/Editor/Utils/PluginUpdater.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Interaction/Editor/PoseDetection/JointRotationFeatureConfigEditor.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Interaction/Editor/Grab/HandGrab/HandGrabPoseEditor.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Interaction/Editor/Utils/ConditionalHideDrawer.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Interaction/Editor/Grab/SnapSurfaces/BezierSurfaceEditor.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Interaction/Editor/Hands/HandVisualEditor.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Interaction/Editor/Grab/HandGrab/HandGrabInteractableEditor.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Interaction/Editor/Selection/Hands/ConicalFrustumEditor.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Interaction/Editor/Grab/SnapSurfaces/BoxEditor.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Interaction/Editor/PackageUtils/PackageCleanup.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Interaction/Editor/UnityCanvas/CanvasRenderTextureEditor.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Interaction/Editor/PoseDetection/FingerFeatureListPropertyDrawer.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Interaction/Editor/Grab/HandGrab/HandPoseEditor.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Interaction/Editor/Poke/PokeInteractableEditor.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Interaction/Editor/Grab/HandGrab/HandWristOffsetUndoWizard.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Interaction/Editor/Surfaces/PointablePlaneEditor.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Interaction/Editor/OVRIntegration/FromHandPrefabDataSourceEditor.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Interaction/Editor/PoseDetection/FeatureListPropertyDrawer.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Interaction/Editor/Surfaces/PointableCylinderEditor.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Interaction/Editor/Grab/SnapSurfaces/SphereEditor.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets/Oculus/Interaction/Editor/Oculus.Interaction.Editor.asmdef" />
+    <None Include="Assets/06.ETC/Oculus/Interaction/Editor/Oculus.Interaction.Editor.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -364,9 +369,6 @@
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>/Applications/Unity/Hub/Editor/2021.3.13f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="Photon3Unity3D">
-      <HintPath>Assets/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.dll</HintPath>
-    </Reference>
     <Reference Include="log4netPlastic">
       <HintPath>Library/PackageCache/com.unity.collab-proxy@1.17.6/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
     </Reference>
@@ -375,9 +377,6 @@
     </Reference>
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
       <HintPath>Library/PackageCache/com.unity.collab-proxy@1.17.6/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="websocket-sharp">
-      <HintPath>Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Unsafe">
       <HintPath>Library/PackageCache/com.unity.burst@1.6.6/Unity.Burst.Unsafe.dll</HintPath>
@@ -399,6 +398,12 @@
     </Reference>
     <Reference Include="Unity.Burst.Cecil.Rocks">
       <HintPath>Library/PackageCache/com.unity.burst@1.6.6/Unity.Burst.CodeGen/Unity.Burst.Cecil.Rocks.dll</HintPath>
+    </Reference>
+    <Reference Include="Photon3Unity3D">
+      <HintPath>Assets/06.ETC/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.dll</HintPath>
+    </Reference>
+    <Reference Include="websocket-sharp">
+      <HintPath>Assets/06.ETC/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>

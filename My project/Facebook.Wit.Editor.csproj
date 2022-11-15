@@ -54,44 +54,49 @@
   </PropertyGroup>
   <ItemGroup>
     <Analyzer Include="/Applications/Visual Studio.app/Contents/MonoBundle/Addins/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="/Users/jeonghyeongi/Desktop/Git/VRVR/My project/Assets/06.ETC/Photon/PhotonLibs/Metro/Photon3Unity3D.dll" />
+    <Analyzer Include="/Users/jeonghyeongi/Desktop/Git/VRVR/My project/Assets/06.ETC/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.dll" />
+    <Analyzer Include="/Users/jeonghyeongi/Desktop/Git/VRVR/My project/Assets/06.ETC/Photon/PhotonVoice/PhotonVoiceLibs/WSA/Photon.Voice.UWP.winmd" />
+    <Analyzer Include="/Users/jeonghyeongi/Desktop/Git/VRVR/My project/Assets/06.ETC/Photon/PhotonLibs/Photon3Unity3D.dll" />
+    <Analyzer Include="/Users/jeonghyeongi/Desktop/Git/VRVR/My project/Assets/06.ETC/Photon/PhotonLibs/WebSocket/websocket-sharp.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/CallbackHandlers/SimpleStringEntityHandlerEditor.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/Data/Configuration/WitEndpointConfigDrawer.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/Data/Configuration/WitConfigurationUtility.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/Windows/WitWindowUtility.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/Inspectors/WitInspector.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/Data/Configuration/WitWelcomeWizard.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/Windows/PropertyDrawers/WitEntityPropertyDrawer.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/Windows/PropertyDrawers/WitSimplePropertyDrawer.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/Data/Configuration/IApplicationDetailProvider.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/Data/Configuration/WitApplicationDetailProvider.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/CallbackHandlers/ValuePathMatcherPropertyDrawer.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/WitTexts.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/Windows/PropertyDrawers/WitPropertyDrawer.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/Windows/PropertyDrawers/WitTraitPropertyDrawer.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/Utility/WitUnderstandingViewer.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/Windows/PropertyDrawers/WitIntentPropertyDrawer.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/Windows/WitScriptableWizard.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/Lib/Mic/MicEditor.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/Data/Configuration/WitWindow.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/Windows/PropertyDrawers/WitTraitValuePropertyDrawer.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/WitConfigurationEditorUI.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/Windows/PropertyDrawers/ConfidenceRangeDrawer.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/Data/WitDataCreation.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/Data/Configuration/WitConfigurationPostprocessor.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/Windows/PropertyDrawers/WitEntityRolePropertyDrawer.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/Windows/WitConfigurationWindow.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/Windows/PropertyDrawers/WitApplicationPropertyDrawer.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/CallbackHandlers/SimpleIntentHandlerEditor.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/Inspectors/WitServiceInspector.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/WitStyles.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/BaseWitWindow.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/Data/Configuration/WitConfigurationEditor.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/WitEditorUI.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/CallbackHandlers/SimpleStringEntityHandlerEditor.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/Data/Configuration/WitEndpointConfigDrawer.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/Data/Configuration/WitConfigurationUtility.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/Windows/WitWindowUtility.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/Inspectors/WitInspector.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/Data/Configuration/WitWelcomeWizard.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/Windows/PropertyDrawers/WitEntityPropertyDrawer.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/Windows/PropertyDrawers/WitSimplePropertyDrawer.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/Data/Configuration/IApplicationDetailProvider.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/Data/Configuration/WitApplicationDetailProvider.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/CallbackHandlers/ValuePathMatcherPropertyDrawer.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/WitTexts.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/Windows/PropertyDrawers/WitPropertyDrawer.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/Windows/PropertyDrawers/WitTraitPropertyDrawer.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/Utility/WitUnderstandingViewer.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/Windows/PropertyDrawers/WitIntentPropertyDrawer.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/Windows/WitScriptableWizard.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/Lib/Mic/MicEditor.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/Data/Configuration/WitWindow.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/Windows/PropertyDrawers/WitTraitValuePropertyDrawer.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/WitConfigurationEditorUI.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/Windows/PropertyDrawers/ConfidenceRangeDrawer.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/Data/WitDataCreation.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/Data/Configuration/WitConfigurationPostprocessor.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/Windows/PropertyDrawers/WitEntityRolePropertyDrawer.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/Windows/WitConfigurationWindow.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/Windows/PropertyDrawers/WitApplicationPropertyDrawer.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/CallbackHandlers/SimpleIntentHandlerEditor.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/Inspectors/WitServiceInspector.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/WitStyles.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/BaseWitWindow.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/Data/Configuration/WitConfigurationEditor.cs" />
+    <Compile Include="Assets/06.ETC/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/WitEditorUI.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/Facebook.Wit.Editor.asmdef" />
+    <None Include="Assets/06.ETC/Oculus/Voice/Lib/Wit.ai/Scripts/Editor/Facebook.Wit.Editor.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -355,9 +360,6 @@
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>/Applications/Unity/Hub/Editor/2021.3.13f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="Photon3Unity3D">
-      <HintPath>Assets/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.dll</HintPath>
-    </Reference>
     <Reference Include="log4netPlastic">
       <HintPath>Library/PackageCache/com.unity.collab-proxy@1.17.6/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
     </Reference>
@@ -366,9 +368,6 @@
     </Reference>
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
       <HintPath>Library/PackageCache/com.unity.collab-proxy@1.17.6/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="websocket-sharp">
-      <HintPath>Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Unsafe">
       <HintPath>Library/PackageCache/com.unity.burst@1.6.6/Unity.Burst.Unsafe.dll</HintPath>
@@ -390,6 +389,12 @@
     </Reference>
     <Reference Include="Unity.Burst.Cecil.Rocks">
       <HintPath>Library/PackageCache/com.unity.burst@1.6.6/Unity.Burst.CodeGen/Unity.Burst.Cecil.Rocks.dll</HintPath>
+    </Reference>
+    <Reference Include="Photon3Unity3D">
+      <HintPath>Assets/06.ETC/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.dll</HintPath>
+    </Reference>
+    <Reference Include="websocket-sharp">
+      <HintPath>Assets/06.ETC/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>

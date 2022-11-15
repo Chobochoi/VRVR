@@ -54,6 +54,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Analyzer Include="/Applications/Visual Studio.app/Contents/MonoBundle/Addins/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="/Users/jeonghyeongi/Desktop/Git/VRVR/My project/Assets/06.ETC/Photon/PhotonLibs/Metro/Photon3Unity3D.dll" />
+    <Analyzer Include="/Users/jeonghyeongi/Desktop/Git/VRVR/My project/Assets/06.ETC/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.dll" />
+    <Analyzer Include="/Users/jeonghyeongi/Desktop/Git/VRVR/My project/Assets/06.ETC/Photon/PhotonVoice/PhotonVoiceLibs/WSA/Photon.Voice.UWP.winmd" />
+    <Analyzer Include="/Users/jeonghyeongi/Desktop/Git/VRVR/My project/Assets/06.ETC/Photon/PhotonLibs/Photon3Unity3D.dll" />
+    <Analyzer Include="/Users/jeonghyeongi/Desktop/Git/VRVR/My project/Assets/06.ETC/Photon/PhotonLibs/WebSocket/websocket-sharp.dll" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Library/PackageCache/com.unity.test-framework@1.1.31/UnityEngine.TestRunner/Utils/AssemblyProvider/ITestAssemblyProvider.cs" />
